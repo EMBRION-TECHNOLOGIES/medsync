@@ -4,6 +4,7 @@ export const navbar = {
     { href: '/about', label: 'About' },
     { href: '/features', label: 'Features' },
     { href: '/pricing', label: 'Pricing' },
+    { href: '/blog', label: 'Blog' },
     { href: '/faq', label: 'FAQ' },
     { href: '/contact', label: 'Contact' }
   ],
@@ -17,8 +18,8 @@ export const hero = {
   trust: 'Trusted by 10,000+ patients and 500+ clinics',
   title: 'Manage Your Health, Simply',
   subtitle: 'Never miss a dose again. MedSync helps you stay on track with medication reminders, appointment scheduling, and secure health records.',
-  primaryCta: { href: '#download', label: 'Get Started Free' },
-  secondaryCta: { href: '#waitlist', label: 'Join Waitlist' }
+  primaryCta: { href: process.env.NEXT_PUBLIC_APP_STORE_URL || '/contact', label: 'Download App' },
+  secondaryCta: { href: '/contact', label: 'Join Waitlist' }
 };
 
 export const features = {
@@ -106,7 +107,7 @@ export const pricing = {
         'Offline alerts',
         'Basic health insights'
       ],
-      cta: { href: '#download', label: 'Get Started Free' }
+      cta: { href: process.env.NEXT_PUBLIC_APP_STORE_URL || '/contact', label: 'Download App' }
     },
     {
       name: 'Clinics',
@@ -166,6 +167,7 @@ export const footer = {
     { href: '/about', label: 'About' },
     { href: '/features', label: 'Features' },
     { href: '/pricing', label: 'Pricing' },
+    { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'Contact' }
   ],
   socials: [
@@ -173,5 +175,5 @@ export const footer = {
     { href: '#', label: 'LinkedIn' },
     { href: '#', label: 'Facebook' }
   ],
-  copyright: '© 2024 MedSync. All rights reserved.'
+  copyright: `© ${new Date().getFullYear()} MedSync. All rights reserved.`
 };

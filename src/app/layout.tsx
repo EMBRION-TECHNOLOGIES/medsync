@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import { Nunito_Sans } from 'next/font/google';
 import './globals.css';
+import { PageTransition } from '@/components/ui/page-transition';
+import Analytics from '@/components/Analytics';
+import CookieBanner from '@/components/CookieBanner';
 
 const nunitoSans = Nunito_Sans({ 
   subsets: ['latin'], 
@@ -50,14 +53,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={nunitoSans.variable}>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-      </head>
-      <body className="font-sans min-h-dvh antialiased text-zinc-900 bg-white">
-        {children}
+      <body className="font-nunito min-h-dvh antialiased text-zinc-900 bg-white">
+        <PageTransition>
+          {children}
+        </PageTransition>
+        <Analytics />
+        <CookieBanner />
       </body>
     </html>
   );

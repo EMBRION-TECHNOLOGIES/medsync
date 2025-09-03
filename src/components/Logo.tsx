@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { cn } from '@/lib/utils';
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg';
@@ -12,7 +13,7 @@ export default function Logo({
   size = 'md', 
   showText = true, 
   linkToHome = false,
-  className = ''
+  className
 }: LogoProps) {
   const sizeClasses = {
     sm: 'w-6 h-6',
@@ -27,16 +28,17 @@ export default function Logo({
   };
 
   const LogoContent = () => (
-    <div className={`flex items-center gap-2 ${className}`}>
+    <div className={cn("flex items-center gap-2", className)}>
       <Image
-        src="/medsync_logo_outlined.svg"
+        src="/medsync_logo.svg"
         alt="MedSync Logo"
         width={32}
         height={32}
-        className={sizeClasses[size]}
+        className={cn(sizeClasses[size], "transition-all duration-300")}
+        priority
       />
       {showText && (
-        <span className={`font-semibold ${textSizes[size]}`}>
+        <span className={cn("font-nunito font-semibold transition-all duration-300", textSizes[size])}>
           MedSync
         </span>
       )}
@@ -45,7 +47,10 @@ export default function Logo({
 
   if (linkToHome) {
     return (
-      <Link href="/" className="hover:opacity-80 transition-opacity">
+      <Link 
+        href="/" 
+        className="hover:opacity-80 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-ms-blue/20 focus:ring-offset-2 rounded-lg"
+      >
         <LogoContent />
       </Link>
     );

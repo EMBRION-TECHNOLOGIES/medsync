@@ -6,10 +6,17 @@ import Pricing from '@/components/Pricing';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
+import DownloadButtons from '@/components/DownloadButtons';
+import Typography from '@/components/ui/Typography';
+
+export const metadata = {
+  title: 'MedSync - Healthcare Management Made Simple',
+  description: 'Manage prescriptions, appointments, and reminders — all in one simple app. Free for patients, powerful for clinics.',
+};
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen">
       <NavBar />
       <Hero />
       <FeatureGrid />
@@ -17,17 +24,18 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <FAQ />
-      <section className="container py-16">
-        <h3 className="text-2xl font-semibold">
-          Ready to take control of your health?
-        </h3>
-        <div className="mt-4 flex gap-3">
-          <a href="#download" className="rounded-md bg-[hsl(var(--color-primary))] text-[hsl(var(--color-primary-foreground))] px-4 py-2 hover:opacity-90 transition-opacity">
-            Get Started
-          </a>
-          <a href="#waitlist" className="rounded-md border px-4 py-2 hover:bg-zinc-50 transition-colors">
-            Join Waitlist
-          </a>
+      <section className="section-padding bg-gradient-to-br from-ms-green/5 to-ms-blue/5">
+        <div className="container text-center">
+          <div className="max-w-[56rem] mx-auto">
+            <Typography variant="h2" className="mb-6 text-4xl md:text-5xl font-bold">
+              <span className="text-gradient">Ready to take control of your health?</span>
+            </Typography>
+            <Typography variant="bodyLarge" className="text-xl text-slate-600 mb-8 content-narrow">
+              Join thousands of patients and healthcare providers who trust MedSync 
+              to manage their healthcare needs.
+            </Typography>
+            <DownloadButtons />
+          </div>
         </div>
       </section>
       <Footer />

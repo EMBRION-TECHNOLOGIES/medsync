@@ -1,127 +1,200 @@
 # MedSync Landing Page
 
-A fast, SEO-optimized landing page for MedSync - a healthcare app that helps patients manage prescriptions, appointments, and reminders.
+A modern, responsive landing page for MedSync - a healthcare management app that helps patients stay on track with medications, appointments, and health records.
 
-## Features
+## 🚀 Features
 
-- 🚀 **Fast Performance** - Built with Next.js 15 and optimized for speed
-- 📱 **Responsive Design** - Mobile-first approach with Tailwind CSS
-- 🎨 **Modern UI** - Beautiful components using shadcn/ui
-- 📧 **Contact Form** - Working contact form with Resend email integration
-- 🔍 **SEO Optimized** - Proper metadata and structured content
-- 📄 **Multiple Pages** - Home, About, Features, Pricing, FAQ, and Contact
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
+- **Modern UI** - Built with shadcn/ui components
+- **SEO Optimized** - Complete meta tags, sitemap, and robots.txt
+- **Contact Form** - Working contact form with Resend integration
+- **Analytics Ready** - Plausible analytics integration
+- **Cookie Compliance** - GDPR-compliant cookie banner
+- **Blog System** - Complete blog with articles
+- **App Store Integration** - Dynamic download links
 
-## Tech Stack
+## 📁 Project Structure
 
-- **Framework**: Next.js 15 (App Router)
+```
+medsync/
+├── src/
+│   ├── app/                 # Next.js App Router pages
+│   │   ├── about/          # About page
+│   │   ├── blog/           # Blog system
+│   │   ├── contact/        # Contact page
+│   │   ├── features/       # Features page
+│   │   ├── faq/           # FAQ page
+│   │   ├── pricing/       # Pricing page
+│   │   └── api/           # API routes
+│   ├── components/         # React components
+│   │   ├── ui/            # shadcn/ui components
+│   │   ├── Analytics.tsx  # Analytics integration
+│   │   ├── CookieBanner.tsx # Cookie compliance
+│   │   ├── DownloadButtons.tsx # App store links
+│   │   └── ...            # Other components
+│   └── data/              # Content data
+└── public/                # Static assets
+```
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **UI Components**: shadcn/ui
-- **Forms**: React Hook Form + Zod validation
 - **Email**: Resend
+- **Analytics**: Plausible
 - **Deployment**: Vercel (recommended)
 
-## Getting Started
+## ⚙️ Environment Variables
 
-### Prerequisites
+Create a `.env.local` file with the following variables:
 
-- Node.js 18+ 
-- pnpm (recommended) or npm
+```env
+# Site Configuration
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
-### Installation
+# Email Service (Resend)
+RESEND_API_KEY=your_resend_api_key_here
 
-1. Clone the repository
-2. Install dependencies:
+# Analytics (Optional)
+NEXT_PUBLIC_PLAUSIBLE_DOMAIN=your_domain_here
+
+# App Store Links (Optional)
+NEXT_PUBLIC_APP_STORE_URL=https://apps.apple.com/app/medsync
+NEXT_PUBLIC_GOOGLE_PLAY_URL=https://play.google.com/store/apps/details?id=com.medsync.app
+```
+
+## 🚀 Getting Started
+
+1. **Install dependencies**:
    ```bash
+   npm install
+   # or
    pnpm install
+   # or
+   yarn install
    ```
 
-3. Copy environment variables:
+2. **Set up environment variables**:
    ```bash
    cp env.example .env.local
+   # Edit .env.local with your actual values
    ```
 
-4. Update `.env.local` with your configuration:
-   ```env
-   NEXT_PUBLIC_SITE_URL=http://localhost:3000
-   RESEND_API_KEY=your_resend_api_key_here
-   ```
-
-5. Run the development server:
+3. **Run the development server**:
    ```bash
+   npm run dev
+   # or
    pnpm dev
+   # or
+   yarn dev
    ```
 
-6. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. **Open your browser**:
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-## Project Structure
+## 📧 Email Configuration
 
-```
-src/
-├── app/                    # Next.js App Router pages
-│   ├── api/              # API routes
-│   ├── about/            # About page
-│   ├── contact/          # Contact page
-│   ├── features/         # Features page
-│   ├── pricing/          # Pricing page
-│   ├── faq/              # FAQ page
-│   ├── globals.css       # Global styles
-│   ├── layout.tsx        # Root layout
-│   └── page.tsx          # Home page
-├── components/            # React components
-│   ├── ui/               # shadcn/ui components
-│   ├── NavBar.tsx        # Navigation component
-│   ├── Hero.tsx          # Hero section
-│   ├── FeatureGrid.tsx   # Features grid
-│   ├── HowItWorks.tsx    # How it works section
-│   ├── Pricing.tsx       # Pricing section
-│   ├── Testimonials.tsx  # Testimonials
-│   ├── FAQ.tsx           # FAQ section
-│   └── Footer.tsx        # Footer component
-└── data/                 # Content data
-    └── landing.ts        # Landing page content
-```
+The contact form uses Resend for email delivery:
 
-## Deployment
+1. Sign up at [resend.com](https://resend.com)
+2. Get your API key
+3. Add it to your `.env.local` file
+4. Update the email addresses in `src/app/api/contact/route.ts`
+
+## 📊 Analytics Setup
+
+Plausible analytics is integrated but optional:
+
+1. Sign up at [plausible.io](https://plausible.io)
+2. Add your domain to the `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` environment variable
+3. Analytics will automatically start tracking
+
+## 🍪 Cookie Compliance
+
+The site includes a GDPR-compliant cookie banner that:
+- Shows on first visit
+- Remembers user preferences
+- Links to privacy policy
+- Complies with EU regulations
+
+## 📱 App Store Integration
+
+Download buttons automatically adapt based on environment variables:
+- If `NEXT_PUBLIC_APP_STORE_URL` is set, shows iOS download button
+- If `NEXT_PUBLIC_GOOGLE_PLAY_URL` is set, shows Android download button
+- Falls back to contact form if no URLs are configured
+
+## 📝 Blog System
+
+The blog system includes:
+- Blog index page (`/blog`)
+- Individual blog posts (`/blog/[slug]`)
+- SEO-optimized metadata
+- Responsive design
+- Easy content management
+
+## 🎨 Customization
+
+### Colors
+The app uses a custom color scheme defined in `tailwind.config.js`:
+- `ms-blue`: Primary blue color
+- `ms-green`: Secondary green color
+
+### Content
+All content is managed in `src/data/landing.ts` for easy updates.
+
+### Components
+Components are built with shadcn/ui and can be customized in `src/components/ui/`.
+
+## 🚀 Deployment
 
 ### Vercel (Recommended)
-
 1. Push your code to GitHub
 2. Connect your repository to Vercel
-3. Set environment variables in Vercel dashboard
-4. Deploy automatically on push
+3. Add environment variables in Vercel dashboard
+4. Deploy automatically
 
 ### Other Platforms
-
-The project can be deployed to any platform that supports Next.js:
+The app can be deployed to any platform that supports Next.js:
 - Netlify
 - Railway
 - DigitalOcean App Platform
 - AWS Amplify
 
-## Environment Variables
+## 📈 Performance
 
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `NEXT_PUBLIC_SITE_URL` | Your site's URL | Yes |
-| `RESEND_API_KEY` | Resend API key for email | Yes |
-| `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` | Plausible analytics domain | No |
+The app is optimized for performance with:
+- Static generation where possible
+- Image optimization
+- Font optimization
+- Minimal JavaScript bundle
+- SEO best practices
 
-## Customization
+## 🔧 Development
 
-### Content
+### Adding New Pages
+1. Create a new folder in `src/app/`
+2. Add a `page.tsx` file
+3. Update navigation in `src/data/landing.ts`
+4. Add to sitemap in `src/app/sitemap.ts`
 
-Update the content in `src/data/landing.ts` to match your business needs.
+### Adding New Components
+1. Create component in `src/components/`
+2. Export from component file
+3. Import where needed
 
 ### Styling
+- Use Tailwind CSS classes
+- Follow the design system in `src/data/landing.ts`
+- Use shadcn/ui components when possible
 
-Modify `src/app/globals.css` and component styles to match your brand colors and design preferences.
+## 📄 License
 
-### Components
+This project is licensed under the MIT License.
 
-All components are modular and can be easily modified or extended in the `src/components/` directory.
-
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -129,10 +202,12 @@ All components are modular and can be easily modified or extended in the `src/co
 4. Test thoroughly
 5. Submit a pull request
 
-## License
+## 📞 Support
 
-This project is open source and available under the [MIT License](LICENSE).
+For support or questions:
+- Email: support@medsync.com
+- Website: [medsync.app](https://medsync.app)
 
-## Support
+---
 
-For support or questions, please contact the development team or create an issue in the repository.
+Built with ❤️ for better healthcare management.
