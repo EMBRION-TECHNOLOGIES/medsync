@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   description: 'Manage prescriptions, appointments, and reminders — all in one simple app.',
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon.svg', type: 'image/svg+xml' }
+      { url: '/favicon.ico?v=2', sizes: 'any' },
+      { url: '/favicon.svg?v=2', type: 'image/svg+xml' }
     ],
-    apple: '/apple-touch-icon.png',
-    shortcut: '/favicon.ico'
+    apple: '/apple-touch-icon.png?v=2',
+    shortcut: '/favicon.ico?v=2'
   },
   manifest: '/site.webmanifest',
   openGraph: {
