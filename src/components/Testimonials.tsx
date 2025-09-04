@@ -11,10 +11,10 @@ export default function Testimonials() {
 
       <div className="container relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <h2 className="font-nunito font-bold text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
             <span className="text-gradient">What Our Users Say</span>
           </h2>
-          <p className="text-xl md:text-2xl text-slate-600 max-w-[48rem] mx-auto leading-relaxed">
+          <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 max-w-[48rem] mx-auto leading-relaxed">
             Join thousands of patients and healthcare providers who trust MedSync
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function Testimonials() {
                 </div>
 
                 {/* Quote */}
-                <blockquote className="text-base text-slate-800 leading-relaxed mb-6 relative">
+                <blockquote className="font-nunito font-regular text-base text-slate-800 leading-relaxed mb-6 relative">
                   {/* <span className="text-6xl text-ms-blue/20 absolute -top-4 -left-2 font-serif">"</span> */}
                   <span className="relative z-10">{testimonial.quote}</span>
                   {/* <span className="text-6xl text-ms-blue/20 absolute -bottom-8 -right-2 font-serif">"</span> */}
@@ -46,16 +46,16 @@ export default function Testimonials() {
                 {/* Author */}
                 <div className="flex items-center gap-4">
                   {/* Avatar */}
-                  <div className="w-12 h-12 bg-gradient-to-br from-ms-blue to-ms-green rounded-full flex items-center justify-center text-white font-semibold text-lg">
+                  <div className="w-12 h-12 bg-gradient-to-br from-ms-blue to-ms-green rounded-full flex items-center justify-center text-white font-nunito font-semibold text-lg">
                     {testimonial.author.split(' ').map(name => name[0]).join('').toUpperCase()}
                   </div>
                   
                   {/* Author Info */}
                   <div>
-                    <div className="font-semibold text-slate-900 group-hover:text-ms-blue transition-colors duration-300">
+                    <div className="font-nunito font-semibold text-base text-slate-900 group-hover:text-ms-blue transition-colors duration-300">
                       {testimonial.author}
                     </div>
-                    <div className="text-slate-600 text-sm">
+                    <div className="font-nunito font-regular text-sm text-slate-600">
                       {testimonial.role}
                     </div>
                   </div>
@@ -84,26 +84,26 @@ export default function Testimonials() {
         {/* Stats Section */}
         <div className="mt-20 text-center animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 max-w-[64rem] mx-auto border border-slate-200/50">
-            <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">
+            <h3 className="font-nunito font-bold text-3xl md:text-4xl text-slate-900 mb-8">
               Trusted by Healthcare Providers Nationwide
             </h3>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-ms-blue mb-2">4.9/5</div>
-                <div className="text-sm text-slate-600">User Rating</div>
+                <div className="font-nunito font-bold text-3xl text-ms-blue mb-2">4.9/5</div>
+                <div className="font-nunito font-regular text-sm text-slate-600">User Rating</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-ms-green mb-2">10K+</div>
-                <div className="text-sm text-slate-600">Active Users</div>
+                <div className="font-nunito font-bold text-3xl text-ms-green mb-2">10K+</div>
+                <div className="font-nunito font-regular text-sm text-slate-600">Active Users</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-ms-yellow mb-2">500+</div>
-                <div className="text-sm text-slate-600">Partner Clinics</div>
+                <div className="font-nunito font-bold text-3xl text-ms-yellow mb-2">500+</div>
+                <div className="font-nunito font-regular text-sm text-slate-600">Partner Clinics</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-ms-blue mb-2">99%</div>
-                <div className="text-sm text-slate-600">Uptime</div>
+                <div className="font-nunito font-bold text-3xl text-ms-blue mb-2">99%</div>
+                <div className="font-nunito font-regular text-sm text-slate-600">Uptime</div>
               </div>
             </div>
           </div>
@@ -111,10 +111,10 @@ export default function Testimonials() {
 
         {/* CTA Section */}
         <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '1s' }}>
-          <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+          <h3 className="font-nunito font-bold text-3xl md:text-4xl text-slate-900 mb-6">
             Ready to join our community?
           </h3>
-          <p className="text-xl text-slate-600 mb-8 max-w-[48rem] mx-auto leading-relaxed">
+          <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 mb-8 max-w-[48rem] mx-auto leading-relaxed">
             Start your healthcare journey with MedSync today and experience the difference.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

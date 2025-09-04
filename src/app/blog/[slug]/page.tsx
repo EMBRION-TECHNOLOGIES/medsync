@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import React from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import Typography from '@/components/ui/Typography';
@@ -379,34 +380,115 @@ export default function BlogPost({ params }: Params) {
           <div className="max-w-[56rem] mx-auto">
             <article className="prose prose-xl max-w-none content-wide animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <div className="text-gray-800 leading-relaxed text-lg space-y-6">
-                {article.body.split('\n\n').map((paragraph, index) => {
-                  // Remove markdown formatting and convert to plain text
-                  const cleanText = paragraph
-                    .replace(/^#+\s*/gm, '') // Remove headers
-                    .replace(/\*\*(.*?)\*\*/g, '$1') // Remove bold
-                    .replace(/\*(.*?)\*/g, '$1') // Remove italic
-                    .replace(/^- /gm, '• ') // Convert bullet points
-                    .replace(/^\d+\. /gm, '') // Remove numbered lists
-                    .trim();
+                {article.body.split('\n').map((line, index) => {
+                  const trimmedLine = line.trim();
                   
-                  if (!cleanText) return null;
+                  if (!trimmedLine) return null;
                   
-                  // Check if it's a list item or regular paragraph
-                  if (cleanText.startsWith('•')) {
+                  // Handle headers
+                  if (trimmedLine.startsWith('#')) {
+                    const level = trimmedLine.match(/^#+/)?.[0].length || 1;
+                    const text = trimmedLine.replace(/^#+\s*/, '');
+                    const headingLevel = Math.min(level, 6);
+                    
+                    const headingProps = {
+                      key: index,
+                      className: `font-nunito font-bold text-slate-900 mb-4 ${
+                        level === 1 ? 'text-3xl' : 
+                        level === 2 ? 'text-2xl' : 
+                        level === 3 ? 'text-xl' : 'text-lg'
+                      }`
+                    };
+                    
+                    switch (headingLevel) {
+                      case 1:
+                        return React.createElement('h1', headingProps, text);
+                      case 2:
+                        return React.createElement('h2', headingProps, text);
+                      case 3:
+                        return React.createElement('h3', headingProps, text);
+                      case 4:
+                        return React.createElement('h4', headingProps, text);
+                      case 5:
+                        return React.createElement('h5', headingProps, text);
+                      case 6:
+                        return React.createElement('h6', headingProps, text);
+                      default:
+                        return React.createElement('h1', headingProps, text);
+                    }
+                  }
+                  
+                  // Handle bullet points
+                  if (trimmedLine.startsWith('- ')) {
+                    const text = trimmedLine.replace(/^- /, '');
+                    const parts = text.split(/(\*\*.*?\*\*)/g);
                     return (
-                      <ul key={index} className="list-disc list-inside space-y-2 ml-4">
-                        {cleanText.split('\n').map((item, itemIndex) => (
-                          <li key={itemIndex} className="text-gray-800">
-                            {item.replace(/^• /, '')}
-                          </li>
-                        ))}
-                      </ul>
+                      <div key={index} className="flex items-start gap-3 ml-4">
+                        <div className="w-2 h-2 bg-ms-blue rounded-full mt-3 flex-shrink-0"></div>
+                        <span className="text-gray-800">
+                          {parts.map((part, partIndex) => {
+                            if (part.startsWith('**') && part.endsWith('**')) {
+                              return (
+                                <strong key={partIndex} className="font-nunito font-semibold text-slate-900">
+                                  {part.slice(2, -2)}
+                                </strong>
+                              );
+                            }
+                            return part;
+                          })}
+                        </span>
+                      </div>
                     );
                   }
                   
+                  // Handle numbered lists
+                  if (/^\d+\. /.test(trimmedLine)) {
+                    const text = trimmedLine.replace(/^\d+\. /, '');
+                    const parts = text.split(/(\*\*.*?\*\*)/g);
+                    return (
+                      <div key={index} className="flex items-start gap-3 ml-4">
+                        <div className="w-6 h-6 bg-ms-green rounded-full flex items-center justify-center text-white text-sm font-semibold mt-1 flex-shrink-0">
+                          {trimmedLine.match(/^\d+/)?.[0]}
+                        </div>
+                        <span className="text-gray-800">
+                          {parts.map((part, partIndex) => {
+                            if (part.startsWith('**') && part.endsWith('**')) {
+                              return (
+                                <strong key={partIndex} className="font-nunito font-semibold text-slate-900">
+                                  {part.slice(2, -2)}
+                                </strong>
+                              );
+                            }
+                            return part;
+                          })}
+                        </span>
+                      </div>
+                    );
+                  }
+                  
+                  // Handle bold text
+                  if (trimmedLine.includes('**')) {
+                    const parts = trimmedLine.split(/(\*\*.*?\*\*)/g);
+                    return (
+                      <p key={index} className="text-gray-800 leading-relaxed">
+                        {parts.map((part, partIndex) => {
+                          if (part.startsWith('**') && part.endsWith('**')) {
+                            return (
+                              <strong key={partIndex} className="font-nunito font-semibold text-slate-900">
+                                {part.slice(2, -2)}
+                              </strong>
+                            );
+                          }
+                          return part;
+                        })}
+                      </p>
+                    );
+                  }
+                  
+                  // Regular paragraph
                   return (
                     <p key={index} className="text-gray-800 leading-relaxed">
-                      {cleanText}
+                      {trimmedLine}
                     </p>
                   );
                 })}

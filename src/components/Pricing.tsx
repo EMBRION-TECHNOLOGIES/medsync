@@ -11,10 +11,10 @@ export default function Pricing() {
 
       <div className="container relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <h2 className="font-nunito font-bold text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
             <span className="text-gradient">{pricing.title}</span>
           </h2>
-          <p className="text-xl md:text-2xl text-slate-600 max-w-[48rem] mx-auto leading-relaxed">
+          <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 max-w-[48rem] mx-auto leading-relaxed">
             Choose the perfect plan for your healthcare needs. Start free, upgrade anytime.
           </p>
         </div>
@@ -31,7 +31,7 @@ export default function Pricing() {
               {/* Popular Badge */}
               {index === 0 && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                  <div className="bg-gradient-to-r from-ms-green to-ms-blue text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
+                  <div className="font-nunito font-semibold text-sm bg-gradient-to-r from-ms-green to-ms-blue text-white px-6 py-2 rounded-full shadow-lg">
                     Most Popular
                   </div>
                 </div>
@@ -42,18 +42,18 @@ export default function Pricing() {
               }`}>
                 {/* Plan Header */}
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-ms-blue transition-colors duration-300">
+                  <h3 className="font-nunito font-bold text-2xl text-slate-900 mb-4 group-hover:text-ms-blue transition-colors duration-300">
                     {plan.name}
                   </h3>
                   
                   <div className="mb-4">
-                    <span className="text-5xl font-bold text-slate-900">{plan.price}</span>
+                    <span className="font-nunito font-bold text-5xl text-slate-900">{plan.price}</span>
                     {plan.period && (
-                      <span className="text-lg text-slate-600 ml-2">{plan.period}</span>
+                      <span className="font-nunito font-regular text-lg text-slate-600 ml-2">{plan.period}</span>
                     )}
                   </div>
                   
-                  <p className="text-slate-600 leading-relaxed">{plan.description}</p>
+                  <p className="font-nunito font-regular text-base text-slate-600 leading-relaxed">{plan.description}</p>
                 </div>
 
                 {/* Features List */}
@@ -70,7 +70,7 @@ export default function Pricing() {
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                         </div>
-                        <span className="text-slate-700 leading-relaxed">{feature}</span>
+                        <span className="font-nunito font-regular text-base text-slate-700 leading-relaxed">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -98,10 +98,10 @@ export default function Pricing() {
         {/* Additional Info */}
         <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <div className="bg-slate-50 rounded-2xl p-8 max-w-[64rem] mx-auto">
-            <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+            <h3 className="font-nunito font-bold text-3xl md:text-4xl text-slate-900 mb-6">
               Need a custom solution?
             </h3>
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-[48rem] mx-auto">
+            <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-[48rem] mx-auto">
               We offer enterprise plans with custom features, dedicated support, and volume discounts for large healthcare organizations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -123,15 +123,15 @@ export default function Pricing() {
 
         {/* Trust Indicators */}
         <div className="mt-16 text-center animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
-          <p className="text-xl text-slate-600 mb-8">Trusted by healthcare providers across Nigeria</p>
+          <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 mb-8">Trusted by healthcare providers across Nigeria</p>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <div className="text-3xl font-bold text-slate-400">500+</div>
+            <div className="font-nunito font-bold text-3xl text-slate-400">500+</div>
             <div className="w-px h-8 bg-slate-300"></div>
-            <div className="text-3xl font-bold text-slate-400">Partner Clinics</div>
+            <div className="font-nunito font-bold text-3xl text-slate-400">Partner Clinics</div>
             <div className="w-px h-8 bg-slate-300"></div>
-            <div className="text-3xl font-bold text-slate-400">10K+</div>
+            <div className="font-nunito font-bold text-3xl text-slate-400">10K+</div>
             <div className="w-px h-8 bg-slate-300"></div>
-            <div className="text-3xl font-bold text-slate-400">Active Users</div>
+            <div className="font-nunito font-bold text-3xl text-slate-400">Active Users</div>
           </div>
         </div>
       </div>

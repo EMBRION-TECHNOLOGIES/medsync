@@ -15,81 +15,97 @@ export const navbar = {
 };
 
 export const hero = {
-  trust: 'Trusted by 10,000+ patients and 500+ clinics',
-  title: 'Manage Your Health, Simply',
-  subtitle: 'Never miss a dose again. MedSync helps you stay on track with medication reminders, appointment scheduling, and secure health records.',
-  primaryCta: { href: process.env.NEXT_PUBLIC_APP_STORE_URL || '/contact', label: 'Download App' },
-  secondaryCta: { href: '/contact', label: 'Join Waitlist' }
+  eyebrow: 'New: Clinic & patient apps',
+  title: 'Finally, your health—synced.',
+  subtitle: 'Medsync brings appointments, medications, and lab updates into one simple, secure app for patients and clinics. Fewer missed doses. Fewer missed visits. Better outcomes.',
+  primaryCta: { href: '/contact', label: 'Get early access', action: 'join_waitlist' },
+  secondaryCta: { href: '#how-it-works', label: 'See how it works', action: 'scroll_to_how_it_works' },
+  trustBadges: [
+    'End-to-end encryption',
+    'Low-data, offline-friendly'
+  ],
+  appMockup: {
+    id: 'medsync-today-card',
+    type: 'app-mockup',
+    layout: {
+      header: {
+        brand: 'Medsync',
+        label: 'Today',
+        reminder: {
+          time: '8:00 PM',
+          instruction: 'Take 1 tablet of Amlodipine 5 mg'
+        }
+      },
+      features: [
+        {
+          title: 'Reminders',
+          description: 'Smart, streak-based reminders that adapt to your routine.'
+        },
+        {
+          title: 'Appointments',
+          description: 'Auto-sync clinic visits and get ride-time alerts.'
+        },
+        {
+          title: 'Secure chat',
+          description: 'Ask quick questions without a clinic call queue.'
+        },
+        {
+          title: 'Clinic portal',
+          description: 'Simple dashboard to update meds and follow-ups.'
+        }
+      ]
+    }
+  }
 };
 
 export const features = {
-  title: 'Everything You Need to Stay on Track',
+  title: 'Everything you need to keep care on track',
+  subtitle: 'Designed for patients, loved ones, and healthcare teams to stay aligned—without extra work.',
   items: [
     {
-      icon: '🕑',
-      title: 'Smart Reminders',
-      description: 'Flexible dosing schedules with snooze/skip and adherence records.'
+      title: 'Smart medication reminders',
+      description: 'Adaptive timing, refill countdowns, skip/snooze with reason capture.'
     },
     {
-      icon: '📅',
-      title: 'Appointments',
-      description: 'Book, reschedule, and get automated reminders.'
+      title: 'Auto-synced appointments',
+      description: 'One-tap calendar sync and transport time nudges.'
     },
     {
-      icon: '🏥',
-      title: 'Clinic Portal',
-      description: 'Doctors can monitor progress, share notes, and update prescriptions.'
+      title: 'Clinic portal',
+      description: 'Lightweight portal for providers to update plans and monitor adherence.'
     },
     {
-      icon: '💊',
-      title: 'One-Tap Refills',
-      description: 'Request refills directly from clinic or pharmacy.'
+      title: 'Refill & pickup',
+      description: 'Connect to pharmacies for refills and delivery.'
     },
     {
-      icon: '📈',
-      title: 'Health Insights',
-      description: 'Turn habits into simple, visual insights.'
+      title: 'Privacy first',
+      description: 'End-to-end encryption and role-based access controls.'
     },
     {
-      icon: '🔒',
-      title: 'Data Privacy',
-      description: 'End-to-end encryption and global standards.'
-    },
-    {
-      icon: '📶',
-      title: 'Low-Data Mode',
-      description: 'Works offline; syncs on reconnect.'
-    },
-    {
-      icon: '🤖',
-      title: 'Steward AI',
-      description: 'Patient buddy + doctor assistant for follow-ups and triage.'
+      title: 'Low-data mode',
+      description: 'Works offline and syncs when online; great for low-connectivity areas.'
     }
   ]
 };
 
 export const howItWorks = {
-  title: 'How It Works',
+  title: 'How Medsync works',
   steps: [
     {
-      number: '1',
-      title: 'Download & Setup',
-      description: 'Get the app and create your profile in minutes.'
+      number: 1,
+      title: 'Join the waitlist',
+      description: 'Sign up with your email or clinic code to reserve your spot.'
     },
     {
-      number: '2',
-      title: 'Add Medications',
-      description: 'Scan prescriptions or manually enter your medications.'
+      number: 2,
+      title: 'Connect your clinic',
+      description: 'Your care team invites you and your plan is imported securely.'
     },
     {
-      number: '3',
-      title: 'Get Reminders',
-      description: 'Receive timely alerts and track your adherence.'
-    },
-    {
-      number: '4',
-      title: 'Stay Connected',
-      description: 'Share progress with your healthcare team.'
+      number: 3,
+      title: 'Stay on track',
+      description: 'Get reminders, updates, and gentle nudges that fit your life.'
     }
   ]
 };

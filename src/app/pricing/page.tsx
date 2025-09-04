@@ -140,10 +140,10 @@ export default function PricingPage() {
             </p>
           </div>
 
-          <div className="max-w-[64rem] mx-auto mt-8">
-            <div className="card card-elevated p-12 text-center relative group hover:scale-105 transition-all duration-300 animate-fade-in-up overflow-hidden">
+          <div className="max-w-[64rem] mx-auto mt-16">
+            <div className="card card-elevated p-12 text-center relative group hover:scale-105 transition-all duration-300 animate-fade-in-up overflow-visible">
               {/* Free Badge */}
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
+              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20">
                 <div className="bg-gradient-to-r from-ms-green to-ms-blue text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg">
                   Always Free
                 </div>

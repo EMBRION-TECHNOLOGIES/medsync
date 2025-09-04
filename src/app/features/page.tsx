@@ -1,5 +1,17 @@
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
+import { 
+  Clock, 
+  Calendar, 
+  Building2, 
+  Pill, 
+  TrendingUp, 
+  Shield, 
+  Wifi, 
+  Bot,
+  Stethoscope,
+  CreditCard
+} from 'lucide-react';
 
 export const metadata = {
   title: 'Features',
@@ -9,7 +21,7 @@ export const metadata = {
 export default function Features() {
   const features = [
     {
-      icon: "🕑",
+      icon: <Clock className="w-8 h-8 text-ms-blue" />,
       title: "Smart Reminders",
       description: "Never miss a dose with intelligent medication reminders that adapt to your schedule.",
       details: [
@@ -21,7 +33,7 @@ export default function Features() {
       category: "Patient Care"
     },
     {
-      icon: "📅",
+      icon: <Calendar className="w-8 h-8 text-ms-green" />,
       title: "Appointment Management",
       description: "Seamlessly book, reschedule, and manage your healthcare appointments.",
       details: [
@@ -33,7 +45,7 @@ export default function Features() {
       category: "Scheduling"
     },
     {
-      icon: "🏥",
+      icon: <Building2 className="w-8 h-8 text-ms-yellow" />,
       title: "Clinic Portal",
       description: "Comprehensive dashboard for healthcare providers to manage patients.",
       details: [
@@ -45,7 +57,7 @@ export default function Features() {
       category: "Provider Tools"
     },
     {
-      icon: "💊",
+      icon: <Pill className="w-8 h-8 text-ms-blue" />,
       title: "One-Tap Refills",
       description: "Request medication refills directly from your clinic or pharmacy.",
       details: [
@@ -57,7 +69,7 @@ export default function Features() {
       category: "Medication"
     },
     {
-      icon: "📈",
+      icon: <TrendingUp className="w-8 h-8 text-ms-green" />,
       title: "Health Insights",
       description: "Transform your health data into actionable insights and trends.",
       details: [
@@ -69,7 +81,7 @@ export default function Features() {
       category: "Analytics"
     },
     {
-      icon: "🔒",
+      icon: <Shield className="w-8 h-8 text-ms-yellow" />,
       title: "Data Privacy",
       description: "Your health information is protected with enterprise-grade security.",
       details: [
@@ -81,7 +93,7 @@ export default function Features() {
       category: "Security"
     },
     {
-      icon: "📶",
+      icon: <Wifi className="w-8 h-8 text-ms-blue" />,
       title: "Offline Mode",
       description: "Access your health information even without internet connection.",
       details: [
@@ -93,7 +105,7 @@ export default function Features() {
       category: "Accessibility"
     },
     {
-      icon: "🤖",
+      icon: <Bot className="w-8 h-8 text-ms-green" />,
       title: "Steward AI",
       description: "Your personal AI assistant for health management and support.",
       details: [
@@ -122,13 +134,13 @@ export default function Features() {
 
         <div className="container relative z-10">
           <div className="text-center max-w-[64rem] mx-auto">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
+            <h1 className="font-nunito font-bold text-5xl md:text-6xl lg:text-7xl leading-tight mb-8">
               <span className="text-gradient block">Powerful Features</span>
-              <span className="text-slate-900 block text-3xl md:text-4xl lg:text-5xl font-semibold mt-4">
+              <span className="font-nunito font-semibold text-slate-900 block text-3xl md:text-4xl lg:text-5xl mt-4">
                 Everything You Need to Stay on Track
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-600 leading-relaxed content-narrow">
+            <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 leading-relaxed content-narrow">
               Discover the comprehensive suite of tools designed to make healthcare 
               management simple, secure, and effective for patients and providers alike.
             </p>
@@ -149,19 +161,19 @@ export default function Features() {
                 {/* Feature Header */}
                 <div className="mb-6">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
+                    <div className="group-hover:scale-110 transition-transform duration-300">
                       {feature.icon}
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-slate-900 group-hover:text-ms-blue transition-colors duration-300">
+                      <h3 className="font-nunito font-semibold text-xl text-slate-900 group-hover:text-ms-blue transition-colors duration-300">
                         {feature.title}
                       </h3>
-                      <div className="text-sm text-ms-blue font-medium">
+                      <div className="font-nunito font-medium text-sm text-ms-blue">
                         {feature.category}
                       </div>
                     </div>
                   </div>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="font-nunito font-regular text-base text-slate-600 leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
@@ -175,7 +187,7 @@ export default function Features() {
                       style={{ transitionDelay: `${detailIndex * 0.05}s` }}
                     >
                       <div className="w-2 h-2 bg-gradient-to-br from-ms-green to-ms-blue rounded-full flex-shrink-0"></div>
-                      <span className="text-slate-700 text-sm">{detail}</span>
+                      <span className="font-nunito font-regular text-sm text-slate-700">{detail}</span>
                     </div>
                   ))}
                 </div>
@@ -192,10 +204,10 @@ export default function Features() {
       <section className="section-padding bg-gradient-to-br from-slate-50 via-white to-blue-50">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="font-nunito font-bold text-4xl md:text-5xl mb-6">
               <span className="text-gradient">Feature Categories</span>
             </h2>
-            <p className="text-xl text-slate-600 content-narrow">
+            <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 content-narrow">
               Our features are organized into key categories to help you find exactly what you need.
             </p>
           </div>
@@ -229,15 +241,15 @@ export default function Features() {
                 <div className={`w-16 h-16 bg-gradient-to-br ${category.color} rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   {index + 1}
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-4 group-hover:text-ms-blue transition-colors duration-300">
+                <h3 className="font-nunito font-semibold text-xl text-slate-900 mb-4 group-hover:text-ms-blue transition-colors duration-300">
                   {category.title}
                 </h3>
-                <p className="text-slate-600 leading-relaxed mb-6">
+                <p className="font-nunito font-regular text-base text-slate-600 leading-relaxed mb-6">
                   {category.description}
                 </p>
                 <div className="space-y-2">
                   {category.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="text-sm text-slate-700 bg-slate-50 rounded-lg px-3 py-2">
+                    <div key={featureIndex} className="font-nunito font-regular text-sm text-slate-700 bg-slate-50 rounded-lg px-3 py-2">
                       {feature}
                     </div>
                   ))}
@@ -253,10 +265,10 @@ export default function Features() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in-up">
-              <h2 className="text-4xl md:text-5xl font-bold mb-8">
+              <h2 className="font-nunito font-bold text-4xl md:text-5xl mb-8">
                 <span className="text-gradient">Seamless Integration</span>
               </h2>
-              <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+              <div className="space-y-6 font-nunito font-regular text-lg text-slate-600 leading-relaxed">
                 <p>
                   MedSync integrates with your existing healthcare infrastructure, 
                   making adoption simple and seamless for both patients and providers.
@@ -267,12 +279,12 @@ export default function Features() {
                 </p>
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="text-center p-4 bg-slate-50 rounded-lg">
-                    <div className="text-2xl font-bold text-ms-blue">100+</div>
-                    <div className="text-sm text-slate-600">EHR Integrations</div>
+                    <div className="font-nunito font-bold text-2xl text-ms-blue">100+</div>
+                    <div className="font-nunito font-regular text-sm text-slate-600">EHR Integrations</div>
                   </div>
                   <div className="text-center p-4 bg-slate-50 rounded-lg">
-                    <div className="text-2xl font-bold text-ms-green">50+</div>
-                    <div className="text-sm text-slate-600">Pharmacy Partners</div>
+                    <div className="font-nunito font-bold text-2xl text-ms-green">50+</div>
+                    <div className="font-nunito font-regular text-sm text-slate-600">Pharmacy Partners</div>
                   </div>
                 </div>
               </div>
@@ -284,29 +296,29 @@ export default function Features() {
                   <div className="space-y-6">
                     <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
                       <div className="w-12 h-12 bg-ms-blue/10 rounded-lg flex items-center justify-center">
-                        <span className="text-ms-blue text-xl">🏥</span>
+                        <Stethoscope className="w-6 h-6 text-ms-blue" />
                       </div>
                       <div>
-                        <div className="font-semibold text-slate-900">EHR Systems</div>
-                        <div className="text-sm text-slate-600">Epic, Cerner, Allscripts</div>
+                        <div className="font-nunito font-semibold text-base text-slate-900">EHR Systems</div>
+                        <div className="font-nunito font-regular text-sm text-slate-600">Epic, Cerner, Allscripts</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
                       <div className="w-12 h-12 bg-ms-green/10 rounded-lg flex items-center justify-center">
-                        <span className="text-ms-green text-xl">💊</span>
+                        <Pill className="w-6 h-6 text-ms-green" />
                       </div>
                       <div>
-                        <div className="font-semibold text-slate-900">Pharmacies</div>
-                        <div className="text-sm text-slate-600">CVS, Walgreens, Local</div>
+                        <div className="font-nunito font-semibold text-base text-slate-900">Pharmacies</div>
+                        <div className="font-nunito font-regular text-sm text-slate-600">CVS, Walgreens, Local</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
                       <div className="w-12 h-12 bg-ms-yellow/10 rounded-lg flex items-center justify-center">
-                        <span className="text-ms-yellow text-xl">🏥</span>
+                        <CreditCard className="w-6 h-6 text-ms-yellow" />
                       </div>
                       <div>
-                        <div className="font-semibold text-slate-900">Insurance</div>
-                        <div className="text-sm text-slate-600">Major Providers</div>
+                        <div className="font-nunito font-semibold text-base text-slate-900">Insurance</div>
+                        <div className="font-nunito font-regular text-sm text-slate-600">Major Providers</div>
                       </div>
                     </div>
                   </div>
@@ -321,10 +333,10 @@ export default function Features() {
       <section className="section-padding bg-gradient-to-br from-ms-blue to-ms-green">
         <div className="container text-center">
           <div className="max-w-[64rem] mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="font-nunito font-bold text-4xl md:text-5xl text-white mb-6">
               Ready to Experience These Features?
             </h2>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
+            <p className="font-nunito font-regular text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
               Start your free trial today and discover how MedSync can transform 
               your healthcare management experience.
             </p>

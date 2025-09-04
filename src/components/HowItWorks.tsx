@@ -9,7 +9,7 @@ import { AnimatedButton } from './ui/animated-button';
 
 export default function HowItWorks() {
   return (
-    <section className="section-padding bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
+    <section id="how-it-works" className="section-padding bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
       {/* Background Elements */}
       <motion.div 
         className="absolute inset-0 overflow-hidden"
@@ -46,10 +46,10 @@ export default function HowItWorks() {
 
       <div className="container relative z-10">
         <AnimatedSection className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <h2 className="font-nunito font-bold text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
             <span className="text-gradient">{howItWorks.title}</span>
           </h2>
-          <p className="">
+          <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 leading-relaxed">
             Get started with MedSync in just a few simple steps
           </p>
         </AnimatedSection>
@@ -58,7 +58,7 @@ export default function HowItWorks() {
         <div className="hidden lg:block">
           <div className="relative">
             <AnimatedList 
-              className="grid grid-cols-4 gap-8"
+              className="grid grid-cols-3 gap-8"
               staggerDelay={0.2}
               itemDelay={0.1}
             >
@@ -90,10 +90,10 @@ export default function HowItWorks() {
                   
                   {/* Step Content */}
                   <div className="text-center">
-                    <h3 className="text-xl font-semibold text-slate-900 mb-3 group-hover:text-ms-blue transition-colors duration-300">
+                    <h3 className="font-nunito font-semibold text-xl text-slate-900 mb-3 group-hover:text-ms-blue transition-colors duration-300">
                       {step.title}
                     </h3>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="font-nunito font-regular text-base text-slate-600 leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -152,10 +152,10 @@ export default function HowItWorks() {
                   </motion.div>
                   
                   {/* Step Content */}
-                  <h3 className="text-xl font-semibold text-slate-900 mb-4 group-hover:text-ms-blue transition-colors duration-300">
+                  <h3 className="font-nunito font-semibold text-xl text-slate-900 mb-4 group-hover:text-ms-blue transition-colors duration-300">
                     {step.title}
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="font-nunito font-regular text-base text-slate-600 leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -166,7 +166,7 @@ export default function HowItWorks() {
 
         {/* CTA Section */}
         <AnimatedSection className="text-center mt-16" delay={0.8}>
-          <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-[48rem] mx-auto leading-relaxed">
+          <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 mb-8 max-w-[48rem] mx-auto leading-relaxed">
             Ready to get started? It only takes a few minutes to set up your account.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

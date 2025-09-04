@@ -11,10 +11,10 @@ export default function FAQ() {
 
       <div className="container relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <h2 className="font-nunito font-bold text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
             <span className="text-gradient">Frequently Asked Questions</span>
           </h2>
-          <p className="text-xl md:text-2xl text-slate-600 max-w-[48rem] mx-auto leading-relaxed">
+          <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 max-w-[48rem] mx-auto leading-relaxed">
             Find answers to common questions about MedSync, our features, pricing, and how we can help you manage your health better.
           </p>
         </div>
@@ -28,7 +28,7 @@ export default function FAQ() {
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
                 <details className="group">
-                  <summary className="text-xl font-semibold text-slate-900 cursor-pointer hover:text-ms-blue transition-colors duration-300 list-none">
+                  <summary className="font-nunito font-semibold text-xl text-slate-900 cursor-pointer hover:text-ms-blue transition-colors duration-300 list-none">
                     <div className="flex items-center justify-between">
                       <span>{f.q}</span>
                       <svg 
@@ -42,7 +42,7 @@ export default function FAQ() {
                     </div>
                   </summary>
                   <div className="mt-6 pt-6 border-t border-slate-200">
-                    <p className="text-lg text-slate-600 leading-relaxed">{f.a}</p>
+                    <p className="font-nunito font-regular text-base text-slate-600 leading-relaxed">{f.a}</p>
                   </div>
                 </details>
               </div>
@@ -52,10 +52,10 @@ export default function FAQ() {
 
         {/* CTA Section */}
         <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
-          <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+          <h3 className="font-nunito font-bold text-3xl md:text-4xl text-slate-900 mb-6">
             Still Have Questions?
           </h3>
-          <p className="text-xl text-slate-600 mb-8 max-w-[48rem] mx-auto leading-relaxed">
+          <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 mb-8 max-w-[48rem] mx-auto leading-relaxed">
             Our support team is here to help you get the most out of MedSync. 
             Reach out and we&apos;ll get back to you within 24 hours.
           </p>
