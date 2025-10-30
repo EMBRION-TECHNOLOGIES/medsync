@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Mail, Phone, Building2, Clock, HelpCircle, MessageCircle } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -55,31 +56,31 @@ export default function Contact() {
 
   const contactInfo = [
     {
-      icon: "📧",
+      icon: <Mail className="w-7 h-7 text-ms-blue" />,
       title: "Email Support",
       description: "Get help via email",
-      value: "support@medsync.com",
-      action: "mailto:support@medsync.com"
+      value: "hello@medsync.ng",
+      action: "mailto:hello@medsync.ng"
     },
     {
-      icon: "📱",
+      icon: <MessageCircle className="w-7 h-7 text-ms-green" />,
       title: "WhatsApp",
       description: "Chat with our team",
-      value: "+234-XXX-XXX-XXXX",
-      action: "https://wa.me/234XXXXXXXXX"
+      value: "+234-901-366-1942, +234-805-156-6743",
+      action: "https://wa.me/2349013661942, https://wa.me/2348051566743"
     },
     {
-      icon: "🏢",
+      icon: <Building2 className="w-7 h-7 text-ms-yellow" />,
       title: "Office",
-      description: "Visit our headquarters",
-      value: "Abuja, Nigeria",
+      description: "Visit our office",
+      value: "19 EE IKWUE STREET, ASOKORO, ABUJA.",
       action: "#"
     },
     {
-      icon: "⏰",
+      icon: <Clock className="w-7 h-7 text-ms-blue" />,
       title: "Business Hours",
       description: "When we&apos;re available",
-      value: "Mon-Fri, 9AM-6PM WAT",
+      value: "Monday - Friday: 8:00 AM - 8:00 PM WAT\nSaturday - Sunday: 9:00 AM - 5:00 PM WAT",
       action: "#"
     }
   ];
@@ -295,7 +296,9 @@ export default function Contact() {
 
               {/* FAQ Link */}
               <div className="card card-elevated p-8 text-center">
-                <div className="text-4xl mb-4">❓</div>
+                <div className="mb-4 flex justify-center">
+                  <HelpCircle className="w-10 h-10 text-ms-blue" />
+                </div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-4">
                   Have a Quick Question?
                 </h3>

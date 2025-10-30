@@ -15,106 +15,82 @@ import {
 
 export const metadata = {
   title: 'Features',
-  description: 'Discover all the powerful features that make MedSync the perfect healthcare management solution for patients and providers.'
+  description: 'Pharmacy delivery and AI Health Assistant. Order meds with same‑day delivery and get safe answers about your medications.'
 };
 
 export default function Features() {
   const features = [
     {
+      icon: <Pill className="w-8 h-8 text-ms-blue" />,
+      title: "Pharmacy Delivery",
+      description: "Order refills from nearby pharmacies with same‑day delivery where available.",
+      details: [
+        "Search nearby pharmacies",
+        "Real‑time availability",
+        "Delivery tracking",
+        "Secure payments"
+      ],
+      category: "Delivery"
+    },
+    {
+      icon: <Bot className="w-8 h-8 text-ms-green" />,
+      title: "AI Health Assistant",
+      description: "Get safe, reliable answers about your medications and general health education.",
+      details: [
+        "24/7 medication guidance",
+        "Side‑effects and interactions",
+        "Adherence support",
+        "Privacy‑first design"
+      ],
+      category: "AI"
+    },
+    {
       icon: <Clock className="w-8 h-8 text-ms-blue" />,
       title: "Smart Reminders",
-      description: "Never miss a dose with intelligent medication reminders that adapt to your schedule.",
+      description: "Adaptive reminders with streaks, gentle nudges, and skip/snooze options.",
       details: [
-        "Flexible dosing schedules",
-        "Snooze and skip options",
-        "Adherence tracking",
-        "Custom reminder tones"
-      ],
-      category: "Patient Care"
-    },
-    {
-      icon: <Calendar className="w-8 h-8 text-ms-green" />,
-      title: "Appointment Management",
-      description: "Seamlessly book, reschedule, and manage your healthcare appointments.",
-      details: [
-        "Online booking system",
-        "Automated reminders",
-        "Calendar integration",
-        "Provider availability"
-      ],
-      category: "Scheduling"
-    },
-    {
-      icon: <Building2 className="w-8 h-8 text-ms-yellow" />,
-      title: "Clinic Portal",
-      description: "Comprehensive dashboard for healthcare providers to manage patients.",
-      details: [
-        "Patient progress monitoring",
-        "Prescription management",
-        "Clinical notes sharing",
-        "Adherence reports"
-      ],
-      category: "Provider Tools"
-    },
-    {
-      icon: <Pill className="w-8 h-8 text-ms-blue" />,
-      title: "One-Tap Refills",
-      description: "Request medication refills directly from your clinic or pharmacy.",
-      details: [
-        "Direct pharmacy integration",
-        "Prescription history",
-        "Insurance verification",
-        "Delivery tracking"
+        "Flexible schedules",
+        "Skip / Snooze",
+        "Streaks & adherence",
+        "Low‑supply alerts"
       ],
       category: "Medication"
     },
     {
       icon: <TrendingUp className="w-8 h-8 text-ms-green" />,
-      title: "Health Insights",
-      description: "Transform your health data into actionable insights and trends.",
+      title: "Refill Automation",
+      description: "Get notified when you’re running low and reorder in one tap.",
       details: [
-        "Visual health trends",
-        "Medication adherence reports",
-        "Symptom tracking",
-        "Progress analytics"
+        "Supply countdown",
+        "One‑tap reorder",
+        "Order status updates",
+        "Pharmacy follow‑ups"
       ],
-      category: "Analytics"
+      category: "Refills"
     },
     {
       icon: <Shield className="w-8 h-8 text-ms-yellow" />,
-      title: "Data Privacy",
-      description: "Your health information is protected with enterprise-grade security.",
+      title: "Privacy & Security",
+      description: "End‑to‑end encryption, data minimization, and NDPR‑aligned redaction.",
       details: [
-        "End-to-end encryption",
-        "HIPAA compliance",
-        "Secure data storage",
-        "Privacy controls"
+        "Encrypted by default",
+        "Data minimization",
+        "NDPR‑aligned redaction",
+        "Role‑based access"
       ],
       category: "Security"
     },
     {
       icon: <Wifi className="w-8 h-8 text-ms-blue" />,
-      title: "Offline Mode",
-      description: "Access your health information even without internet connection.",
+      title: "Offline & Low‑Data Mode",
+      description: "Reliable reminders and local caching; syncs automatically when online.",
       details: [
-        "Offline medication reminders",
-        "Local data storage",
-        "Automatic sync",
-        "Low-data optimization"
+        "Offline reminders",
+        "Local storage",
+        "Auto sync",
+        "Low‑data optimization"
       ],
-      category: "Accessibility"
-    },
-    {
-      icon: <Bot className="w-8 h-8 text-ms-green" />,
-      title: "Steward AI",
-      description: "Your personal AI assistant for health management and support.",
-      details: [
-        "24/7 health support",
-        "Symptom assessment",
-        "Medication guidance",
-        "Provider triage"
-      ],
-      category: "AI Assistant"
+      category: "Reliability"
     }
   ];
 
@@ -135,14 +111,13 @@ export default function Features() {
         <div className="container relative z-10">
           <div className="text-center max-w-[64rem] mx-auto">
             <h1 className="font-nunito font-bold text-5xl md:text-6xl lg:text-7xl leading-tight mb-8">
-              <span className="text-gradient block">Powerful Features</span>
+              <span className="text-gradient block">Delivery + AI Features</span>
               <span className="font-nunito font-semibold text-slate-900 block text-3xl md:text-4xl lg:text-5xl mt-4">
-                Everything You Need to Stay on Track
+                Everything you need to get meds fast and stay informed
               </span>
             </h1>
             <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 leading-relaxed content-narrow">
-              Discover the comprehensive suite of tools designed to make healthcare 
-              management simple, secure, and effective for patients and providers alike.
+              Order refills with same‑day delivery where available, and get safe, reliable answers about your medications with our AI Health Assistant.
             </p>
           </div>
         </div>
@@ -200,125 +175,86 @@ export default function Features() {
         </div>
       </section>
 
-      {/* Feature Categories */}
+      {/* Delivery Flow Summary */}
       <section className="section-padding bg-gradient-to-br from-slate-50 via-white to-blue-50">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="font-nunito font-bold text-4xl md:text-5xl mb-6">
-              <span className="text-gradient">Feature Categories</span>
+              <span className="text-gradient">How delivery works</span>
             </h2>
             <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 content-narrow">
-              Our features are organized into key categories to help you find exactly what you need.
+              Find a pharmacy, place your order, track delivery, and chat with our AI for safe guidance.
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
-              {
-                title: "Patient Care",
-                description: "Tools designed to help patients manage their health effectively",
-                features: ["Smart Reminders", "Health Insights", "Steward AI"],
-                color: "from-ms-blue to-ms-green"
-              },
-              {
-                title: "Provider Tools",
-                description: "Comprehensive solutions for healthcare providers and clinics",
-                features: ["Clinic Portal", "Patient Monitoring", "Clinical Notes"],
-                color: "from-ms-green to-ms-yellow"
-              },
-              {
-                title: "Security & Privacy",
-                description: "Enterprise-grade security to protect your health information",
-                features: ["Data Encryption", "HIPAA Compliance", "Privacy Controls"],
-                color: "from-ms-yellow to-ms-blue"
-              }
-            ].map((category, index) => (
-              <div 
-                key={index} 
-                className="card card-elevated p-8 text-center group hover:scale-105 transition-all duration-300 animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                <div className={`w-16 h-16 bg-gradient-to-br ${category.color} rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  {index + 1}
-                </div>
-                <h3 className="font-nunito font-semibold text-xl text-slate-900 mb-4 group-hover:text-ms-blue transition-colors duration-300">
-                  {category.title}
-                </h3>
-                <p className="font-nunito font-regular text-base text-slate-600 leading-relaxed mb-6">
-                  {category.description}
-                </p>
-                <div className="space-y-2">
-                  {category.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="font-nunito font-regular text-sm text-slate-700 bg-slate-50 rounded-lg px-3 py-2">
-                      {feature}
-                    </div>
-                  ))}
-                </div>
+              { step: '1', title: 'Find a pharmacy', desc: 'Search nearby pharmacies and confirm availability.' },
+              { step: '2', title: 'Order & track', desc: 'Place your order and track delivery in‑app.' },
+              { step: '3', title: 'Ask our AI', desc: 'Get helpful answers about your medications 24/7.' }
+            ].map((item, i) => (
+              <div key={i} className="card card-elevated p-8 text-center animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s` }}>
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-ms-blue to-ms-green text-white flex items-center justify-center text-lg font-bold mx-auto mb-4">{item.step}</div>
+                <h3 className="font-nunito font-semibold text-xl text-slate-900 mb-2">{item.title}</h3>
+                <p className="font-nunito font-regular text-sm text-slate-600">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Integration Section */}
+      {/* Delivery Partners Snapshot */}
       <section className="section-padding bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in-up">
               <h2 className="font-nunito font-bold text-4xl md:text-5xl mb-8">
-                <span className="text-gradient">Seamless Integration</span>
+                <span className="text-gradient">Built for pharmacies and patients</span>
               </h2>
               <div className="space-y-6 font-nunito font-regular text-lg text-slate-600 leading-relaxed">
                 <p>
-                  MedSync integrates with your existing healthcare infrastructure, 
-                  making adoption simple and seamless for both patients and providers.
+                  MedSync helps community pharmacies accept in‑app orders, manage deliveries, and chat with customers. Patients get fast delivery and clear guidance.
                 </p>
-                <p>
-                  Our platform works with major EHR systems, pharmacy networks, 
-                  and insurance providers to ensure a smooth experience.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mt-8">
+                <div className="grid grid-cols-2 gap-4 mt-4">
                   <div className="text-center p-4 bg-slate-50 rounded-lg">
-                    <div className="font-nunito font-bold text-2xl text-ms-blue">100+</div>
-                    <div className="font-nunito font-regular text-sm text-slate-600">EHR Integrations</div>
+                    <div className="font-nunito font-bold text-2xl text-ms-blue">Same‑day</div>
+                    <div className="font-nunito font-regular text-sm text-slate-600">Delivery windows</div>
                   </div>
                   <div className="text-center p-4 bg-slate-50 rounded-lg">
-                    <div className="font-nunito font-bold text-2xl text-ms-green">50+</div>
-                    <div className="font-nunito font-regular text-sm text-slate-600">Pharmacy Partners</div>
+                    <div className="font-nunito font-bold text-2xl text-ms-green">24/7</div>
+                    <div className="font-nunito font-regular text-sm text-slate-600">AI assistance</div>
                   </div>
                 </div>
               </div>
             </div>
-            
             <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <div className="relative">
                 <div className="bg-gradient-to-br from-ms-blue/10 to-ms-green/10 rounded-3xl p-8">
                   <div className="space-y-6">
                     <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
-                      <div className="w-12 h-12 bg-ms-blue/10 rounded-lg flex items-center justify-center">
-                        <Stethoscope className="w-6 h-6 text-ms-blue" />
-                      </div>
-                      <div>
-                        <div className="font-nunito font-semibold text-base text-slate-900">EHR Systems</div>
-                        <div className="font-nunito font-regular text-sm text-slate-600">Epic, Cerner, Allscripts</div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
                       <div className="w-12 h-12 bg-ms-green/10 rounded-lg flex items-center justify-center">
                         <Pill className="w-6 h-6 text-ms-green" />
                       </div>
                       <div>
-                        <div className="font-nunito font-semibold text-base text-slate-900">Pharmacies</div>
-                        <div className="font-nunito font-regular text-sm text-slate-600">CVS, Walgreens, Local</div>
+                        <div className="font-nunito font-semibold text-base text-slate-900">Pharmacy network</div>
+                        <div className="font-nunito font-regular text-sm text-slate-600">Local partners</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
+                      <div className="w-12 h-12 bg-ms-blue/10 rounded-lg flex items-center justify-center">
+                        <Clock className="w-6 h-6 text-ms-blue" />
+                      </div>
+                      <div>
+                        <div className="font-nunito font-semibold text-base text-slate-900">Tracked delivery</div>
+                        <div className="font-nunito font-regular text-sm text-slate-600">Real‑time status</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
                       <div className="w-12 h-12 bg-ms-yellow/10 rounded-lg flex items-center justify-center">
-                        <CreditCard className="w-6 h-6 text-ms-yellow" />
+                        <Shield className="w-6 h-6 text-ms-yellow" />
                       </div>
                       <div>
-                        <div className="font-nunito font-semibold text-base text-slate-900">Insurance</div>
-                        <div className="font-nunito font-regular text-sm text-slate-600">Major Providers</div>
+                        <div className="font-nunito font-semibold text-base text-slate-900">Privacy first</div>
+                        <div className="font-nunito font-regular text-sm text-slate-600">Encrypted by default</div>
                       </div>
                     </div>
                   </div>
@@ -345,13 +281,13 @@ export default function Features() {
                 href="/contact" 
                 className="btn bg-white text-ms-blue hover:bg-slate-50 btn-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
               >
-                Start Free Trial
+                Partner with MedSync
               </a>
               <a 
-                href="/pricing" 
+                href={process.env.NEXT_PUBLIC_APP_STORE_URL || '/contact'} 
                 className="btn border-2 border-white text-white hover:bg-white hover:text-ms-blue btn-lg transform hover:-translate-y-1 transition-all duration-300"
               >
-                View Pricing
+                Get the App
               </a>
             </div>
           </div>

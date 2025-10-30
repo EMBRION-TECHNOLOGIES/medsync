@@ -12,7 +12,7 @@ export default function Hero() {
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   return (
-    <section className="bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden py-16 md:py-24">
+    <section className="bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden pt-6 md:pt-8 pb-16 md:pb-20">
       {/* Animated Background Elements */}
       <motion.div 
         className="absolute inset-0 overflow-hidden"
@@ -119,7 +119,7 @@ export default function Hero() {
                   →
                 </motion.span>
               </AnimatedButton>
-              <AnimatedButton
+              {/* <AnimatedButton
                 size="lg"
                 variant="outline"
                 onClick={() => {
@@ -131,7 +131,7 @@ export default function Hero() {
                 }}
               >
                 {hero.secondaryCta.label}
-              </AnimatedButton>
+              </AnimatedButton> */}
             </motion.div>
             
             {/* Trust badges */}
@@ -154,72 +154,14 @@ export default function Hero() {
 
           {/* Right Column - App Mockup */}
           <motion.div 
-            className="relative"
+            className="relative flex items-center justify-center min-h-[420px] md:min-h-[560px] lg:min-h-[680px]"
             variants={staggerItem}
           >
-            <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
-              {/* Header with Reminder */}
-              <div className="bg-gradient-to-r from-ms-blue to-ms-green px-4 py-4">
-                <div className="flex items-center justify-between mb-3">
-                  <div>
-                                      <div className="font-nunito font-semibold text-sm text-white">{hero.appMockup.layout.header.brand}</div>
-                  <div className="font-nunito font-regular text-xs text-white/80">{hero.appMockup.layout.header.label}</div>
-                  </div>
-                </div>
-                <motion.div 
-                  className="space-y-1"
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.2 }}
-                >
-                  <div className="font-nunito font-bold text-2xl text-white">
-                    {hero.appMockup.layout.header.reminder.time}
-                  </div>
-                                      <div className="space-y-2">
-                      <div className="flex items-center gap-2 text-white/90">
-                        <span>{hero.appMockup.layout.header.reminder.instruction}</span>
-                      </div>
-                      <div className="w-full bg-white/20 rounded-full h-2">
-                        <div className="bg-white h-2 rounded-full" style={{ width: '75%' }}></div>
-                      </div>
-                    </div>
-                </motion.div>
-              </div>
-
-              {/* Features Grid - 2x2 */}
-              <div className="p-4">
-                <div className="grid grid-cols-2 gap-3">
-                  {hero.appMockup.layout.features.map((feature, index) => {
-                    const icons = [
-                      <Bell key="bell" className="w-5 h-5 text-slate-600" />,
-                      <Calendar key="calendar" className="w-5 h-5 text-slate-600" />,
-                      <MessageCircle key="chat" className="w-5 h-5 text-slate-600" />,
-                      <Stethoscope key="stethoscope" className="w-5 h-5 text-slate-600" />
-                    ];
-                    
-                    return (
-                      <motion.div 
-                        key={index}
-                        className="bg-slate-50 rounded-lg p-3 hover:bg-slate-100 transition-colors"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3 + index * 0.1 }}
-                      >
-                        <div className="flex items-center gap-2 mb-2">
-                          {icons[index]}
-                          <div className="font-nunito font-medium text-sm text-slate-900">
-                            {feature.title}
-                          </div>
-                        </div>
-                        <div className="font-nunito font-regular text-xs text-slate-600 leading-relaxed">
-                          {feature.description}
-                        </div>
-                      </motion.div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
+            <img 
+              src="/Ist October (1).svg" 
+              alt="MedSync App Preview" 
+              className="w-full h-full max-w-none object-contain"
+            />
           </motion.div>
         </motion.div>
       </div>
@@ -229,3 +171,67 @@ export default function Hero() {
     </section>
   );
 }
+
+// {/* <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
+//               {/* Header with Reminder */}
+//               <div className="bg-gradient-to-r from-ms-blue to-ms-green px-4 py-4">
+//                 <div className="flex items-center justify-between mb-3">
+//                   <div>
+//                                       <div className="font-nunito font-semibold text-sm text-white">{hero.appMockup.layout.header.brand}</div>
+//                   <div className="font-nunito font-regular text-xs text-white/80">{hero.appMockup.layout.header.label}</div>
+//                   </div>
+//                 </div>
+//                 <motion.div 
+//                   className="space-y-1"
+//                   initial={{ opacity: 0, x: -20 }}
+//                   animate={{ opacity: 1, x: 0 }}
+//                   transition={{ delay: 0.2 }}
+//                 >
+//                   <div className="font-nunito font-bold text-2xl text-white">
+//                     {hero.appMockup.layout.header.reminder.time}
+//                   </div>
+//                                       <div className="space-y-2">
+//                       <div className="flex items-center gap-2 text-white/90">
+//                         <span>{hero.appMockup.layout.header.reminder.instruction}</span>
+//                       </div>
+//                       <div className="w-full bg-white/20 rounded-full h-2">
+//                         <div className="bg-white h-2 rounded-full" style={{ width: '75%' }}></div>
+//                       </div>
+//                     </div>
+//                 </motion.div>
+//               </div>
+
+//               {/* Features Grid - 2x2 */}
+//               <div className="p-4">
+//                 <div className="grid grid-cols-2 gap-3">
+//                   {hero.appMockup.layout.features.map((feature, index) => {
+//                     const icons = [
+//                       <Bell key="bell" className="w-5 h-5 text-slate-600" />,
+//                       <Calendar key="calendar" className="w-5 h-5 text-slate-600" />,
+//                       <MessageCircle key="chat" className="w-5 h-5 text-slate-600" />,
+//                       <Stethoscope key="stethoscope" className="w-5 h-5 text-slate-600" />
+//                     ];
+                    
+//                     return (
+//                       <motion.div 
+//                         key={index}
+//                         className="bg-slate-50 rounded-lg p-3 hover:bg-slate-100 transition-colors"
+//                         initial={{ opacity: 0, y: 20 }}
+//                         animate={{ opacity: 1, y: 0 }}
+//                         transition={{ delay: 0.3 + index * 0.1 }}
+//                       >
+//                         <div className="flex items-center gap-2 mb-2">
+//                           {icons[index]}
+//                           <div className="font-nunito font-medium text-sm text-slate-900">
+//                             {feature.title}
+//                           </div>
+//                         </div>
+//                         <div className="font-nunito font-regular text-xs text-slate-600 leading-relaxed">
+//                           {feature.description}
+//                         </div>
+//                       </motion.div>
+//                     );
+//                   })}
+//                 </div>
+//               </div>
+//             </div> */}

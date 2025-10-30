@@ -6,41 +6,37 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 export const metadata: Metadata = {
   title: 'FAQ',
-  description: 'Frequently asked questions about MedSync - medication reminders, appointments, and healthcare management.',
+  description: 'FAQ about MedSync pharmacy delivery, refills, and AI Health Assistant — privacy-first and reliable.',
 };
 
 const faqs = [
   {
     q: 'Is MedSync free for patients?',
-    a: 'Yes, patients always get free access to medication reminders, appointment scheduling, and basic health insights. Our core features are designed to be accessible to everyone.'
+    a: 'Yes. Core features like delivery ordering, reminders, and the AI Health Assistant (fair‑use) are free.'
   },
   {
-    q: 'What do clinics get with paid plans?',
-    a: 'Clinics get access to our comprehensive dashboard with patient management tools, medication adherence tracking, appointment scheduling, analytics, refill management, and custom integrations with existing systems.'
+    q: 'How does pharmacy delivery work?',
+    a: 'Search nearby pharmacies in the app, confirm availability, place your order, and track delivery in real‑time where available.'
+  },
+  {
+    q: 'Is the AI safe and private?',
+    a: 'Yes. We minimize sensitive data, apply NDPR‑aligned redaction, and use end‑to‑end encryption. Your data stays private.'
   },
   {
     q: 'Does the app need internet all the time?',
-    a: 'No, MedSync is designed to work offline. Medication reminders work without internet connection, and your data syncs automatically when you reconnect. This is especially important for users in areas with limited connectivity.'
+    a: 'No. Reminders work offline and your data syncs automatically when you reconnect. Delivery and chat resume seamlessly.'
   },
   {
-    q: 'How secure is my health data?',
-    a: 'We use bank-level encryption and follow international healthcare data standards (HIPAA, GDPR). Your data is encrypted end-to-end and stored securely. We never share your personal health information without your explicit consent.'
+    q: 'Can I manage refills automatically?',
+    a: 'Yes. You\'ll get low‑supply alerts, and can reorder in one tap with live order status updates.'
   },
   {
-    q: 'Can I use MedSync for multiple family members?',
-    a: 'Yes, you can manage multiple profiles within the app. This is perfect for families who want to keep track of everyone&apos;s medications and appointments in one place.'
+    q: 'What kinds of questions can the AI answer?',
+    a: 'General medication guidance, side‑effects, interactions, and adherence tips. It doesn\'t diagnose or prescribe and will advise professional care when needed.'
   },
   {
-    q: 'What is Steward AI and how does it help?',
-    a: 'Steward AI is our intelligent assistant that provides 24/7 support for medication questions, symptom monitoring, and health coaching. It can help identify potential issues and connect you with healthcare providers when needed.'
-  },
-  {
-    q: 'How do I get started with MedSync?',
-    a: 'Simply download the app from the App Store or Google Play, create your profile, and add your medications. The app will guide you through the setup process and start sending reminders immediately.'
-  },
-  {
-    q: 'Can I sync with my existing healthcare providers?',
-    a: 'Yes, MedSync integrates with many healthcare systems and electronic health records. Your healthcare providers can access your medication adherence data and update prescriptions directly through our clinic portal.'
+    q: 'How do I get started?',
+    a: 'Download the app, add your medications, and enable reminders. You can search pharmacies, place orders, and chat with the AI right away.'
   }
 ];
 
@@ -66,7 +62,7 @@ export default function FAQPage() {
               </span>
             </Typography>
             <Typography variant="bodyLarge" className="text-xl md:text-2xl text-slate-600 leading-relaxed content-narrow">
-              Find answers to common questions about MedSync, our features, pricing, and how we can help you manage your health better.
+              Answers about pharmacy delivery, refills, and our AI Health Assistant. Learn how MedSync helps you get medications fast and stay informed—privately and securely.
             </Typography>
           </div>
         </div>
@@ -120,10 +116,10 @@ export default function FAQPage() {
             </Typography>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="/contact" 
-                className="btn bg-white text-ms-blue hover:bg-slate-50 btn-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                href={process.env.NEXT_PUBLIC_APP_STORE_URL || '/contact'} 
+                className="btn border-2 border-white text-white hover:bg-white hover:text-ms-blue btn-lg transform hover:-translate-y-1 transition-all duration-300"
               >
-                Contact Support
+                Get the App
               </a>
               <a 
                 href="/features" 

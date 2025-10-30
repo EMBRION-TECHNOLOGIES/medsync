@@ -15,7 +15,7 @@ export default function FAQ() {
             <span className="text-gradient">Frequently Asked Questions</span>
           </h2>
           <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 max-w-[48rem] mx-auto leading-relaxed">
-            Find answers to common questions about MedSync, our features, pricing, and how we can help you manage your health better.
+            Answers about pharmacy delivery, refills, and our AI Health Assistant. Learn how MedSync helps you get medications fast and stay informed—privately and securely.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export default function FAQ() {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
+        {/* <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
           <h3 className="font-nunito font-bold text-3xl md:text-4xl text-slate-900 mb-6">
             Still Have Questions?
           </h3>
@@ -72,8 +72,8 @@ export default function FAQ() {
             >
               Explore Features
             </a>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </section>
   );

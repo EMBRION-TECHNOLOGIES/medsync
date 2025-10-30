@@ -243,16 +243,16 @@ export default function About() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="/contact" 
+                href="https://forms.gle/FQKHuiVtxFJNU8Cp6" 
                 className="btn bg-white text-ms-blue hover:bg-slate-50 btn-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
               >
-                Get Started Free
+                Join Waitlist
               </a>
               <a 
-                href="/features" 
+                href="/contact" 
                 className="btn border-2 border-white text-white hover:bg-white hover:text-ms-blue btn-lg transform hover:-translate-y-1 transition-all duration-300"
               >
-                Learn More
+                Contact Us
               </a>
             </div>
           </div>

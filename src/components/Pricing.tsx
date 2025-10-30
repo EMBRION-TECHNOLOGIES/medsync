@@ -1,4 +1,35 @@
-import { pricing } from '@/data/landing';
+// import { pricing } from '@/data/landing';
+
+const pricing = {
+  title: 'Simple, transparent pricing',
+  plans: [
+    {
+      name: 'Patients',
+      price: 'Free',
+      description: 'Order delivery, get reminders, and chat with AI.',
+      features: [
+        'Pharmacy search & delivery',
+        'Medication reminders',
+        'AI Health Assistant (fair‑use)',
+        'Offline alerts'
+      ],
+      cta: { href: process.env.NEXT_PUBLIC_APP_STORE_URL || '/pricing', label: 'Get the app' }
+    },
+    {
+      name: 'Pharmacies',
+      price: '₦9,999',
+      period: '/month',
+      description: 'Accept in‑app orders and deliveries with simple tools.',
+      features: [
+        'Order & delivery dashboard',
+        'Inventory & availability',
+        'Customer chat (optional)',
+        'Basic analytics'
+      ],
+      cta: { href: '/contact', label: 'Partner with MedSync' }
+    }
+  ]
+};
 
 export default function Pricing() {
   return (
