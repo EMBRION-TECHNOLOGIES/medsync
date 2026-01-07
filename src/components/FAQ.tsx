@@ -15,7 +15,7 @@ export default function FAQ() {
             <span className="text-gradient">Frequently Asked Questions</span>
           </h2>
           <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 max-w-[48rem] mx-auto leading-relaxed">
-            Answers about pharmacy delivery, refills, and our AI Health Assistant. Learn how MedSync helps you get medications fast and stay informed—privately and securely.
+            Answers about pharmacy delivery, refills, and our AI Health Assistant. Learn how TeraSync helps you get medications fast and stay informed—privately and securely.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export default function FAQ() {
             Still Have Questions?
           </h3>
           <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 mb-8 max-w-[48rem] mx-auto leading-relaxed">
-            Our support team is here to help you get the most out of MedSync. 
+            Our support team is here to help you get the most out of TeraSync. 
             Reach out and we&apos;ll get back to you within 24 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

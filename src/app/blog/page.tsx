@@ -30,7 +30,7 @@ const blogPosts = [
   },
   {
     slug: 'clinics-improve-adherence',
-    title: 'How Clinics Can Improve Patient Adherence with MedSync',
+    title: 'How Clinics Can Improve Patient Adherence with TeraSync',
     excerpt: 'Practical strategies for healthcare providers to help patients stay compliant with their medications.',
     date: '2024-01-05',
     readTime: '6 min read',
@@ -54,7 +54,7 @@ export default function BlogPage() {
         <div className="container relative z-10">
           <div className="text-center max-w-[64rem] mx-auto">
             <Typography variant="h1" className="mb-8 text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="text-gradient block">MedSync Blog</span>
+              <span className="text-gradient block">TeraSync Blog</span>
               <span className="text-slate-900 block text-3xl md:text-4xl lg:text-5xl font-semibold mt-4">
                 Healthcare Insights & Tips
               </span>
@@ -127,7 +127,7 @@ export default function BlogPage() {
               <span className="text-gradient">Stay Updated</span>
             </Typography>
             <Typography variant="bodyLarge" className="text-xl text-slate-600 mb-8 content-narrow">
-              Get the latest healthcare insights, tips, and MedSync updates delivered to your inbox.
+              Get the latest healthcare insights, tips, and TeraSync updates delivered to your inbox.
             </Typography>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
               <input 
@@ -156,7 +156,7 @@ export default function BlogPage() {
               Ready to Transform Your Healthcare?
             </Typography>
             <Typography variant="bodyLarge" className="text-xl text-white/90 mb-8 leading-relaxed content-narrow">
-              Join thousands of patients and healthcare providers who trust MedSync 
+              Join thousands of patients and healthcare providers who trust TeraSync 
               to manage their healthcare needs.
             </Typography>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

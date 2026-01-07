@@ -26,7 +26,7 @@ const pricing = {
         'Customer chat (optional)',
         'Basic analytics'
       ],
-      cta: { href: '/contact', label: 'Partner with MedSync' }
+      cta: { href: '/contact', label: 'Partner with TeraSync' }
     }
   ]
 };

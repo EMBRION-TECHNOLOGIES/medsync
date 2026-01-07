@@ -50,7 +50,7 @@ export default function HowItWorks() {
             <span className="text-gradient">{howItWorks.title}</span>
           </h2>
           <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 leading-relaxed">
-            Get started with MedSync in just a few simple steps
+            Get started with TeraSync in just a few simple steps
           </p>
         </AnimatedSection>
 

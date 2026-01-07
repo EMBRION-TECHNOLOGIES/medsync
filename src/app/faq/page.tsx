@@ -6,12 +6,12 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 export const metadata: Metadata = {
   title: 'FAQ',
-  description: 'FAQ about MedSync pharmacy delivery, refills, and AI Health Assistant — privacy-first and reliable.',
+  description: 'FAQ about TeraSync pharmacy delivery, refills, and AI Health Assistant — privacy-first and reliable.',
 };
 
 const faqs = [
   {
-    q: 'Is MedSync free for patients?',
+    q: 'Is TeraSync free for patients?',
     a: 'Yes. Core features like delivery ordering, reminders, and the AI Health Assistant (fair‑use) are free.'
   },
   {
@@ -62,7 +62,7 @@ export default function FAQPage() {
               </span>
             </Typography>
             <Typography variant="bodyLarge" className="text-xl md:text-2xl text-slate-600 leading-relaxed content-narrow">
-              Answers about pharmacy delivery, refills, and our AI Health Assistant. Learn how MedSync helps you get medications fast and stay informed—privately and securely.
+              Answers about pharmacy delivery, refills, and our AI Health Assistant. Learn how TeraSync helps you get medications fast and stay informed—privately and securely.
             </Typography>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function FAQPage() {
               Still Have Questions?
             </Typography>
             <Typography variant="bodyLarge" className="text-xl text-white/90 mb-8 leading-relaxed content-narrow">
-              Our support team is here to help you get the most out of MedSync. 
+              Our support team is here to help you get the most out of TeraSync. 
               Reach out and we&apos;ll get back to you within 24 hours.
             </Typography>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

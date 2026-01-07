@@ -4,7 +4,7 @@ import Typography from '@/components/ui/Typography';
 
 export const metadata = {
   title: 'Test Page',
-  description: 'MedSync test page for development and debugging.',
+  description: 'TeraSync test page for development and debugging.',
 };
 
 export default function TestPage() {
@@ -23,7 +23,7 @@ export default function TestPage() {
         <div className="container relative z-10">
           <div className="text-center max-w-[64rem] mx-auto">
             <Typography variant="h1" className="mb-8 text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="text-gradient block">MedSync Test Page</span>
+              <span className="text-gradient block">TeraSync Test Page</span>
               <span className="text-slate-900 block text-3xl md:text-4xl lg:text-5xl font-semibold mt-4">
                 Development & Debugging
               </span>

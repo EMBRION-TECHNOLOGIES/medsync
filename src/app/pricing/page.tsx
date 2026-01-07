@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Pricing',
-  description: 'Choose the perfect MedSync plan for your healthcare needs. Free for patients, affordable plans for clinics and pharmacies.'
+  description: 'Choose the perfect TeraSync plan for your healthcare needs. Free for patients, affordable plans for clinics and pharmacies.'
 };
 
 export default function PricingPage() {
@@ -75,8 +75,8 @@ export default function PricingPage() {
 
   const faqs = [
     {
-      question: "Is MedSync really free for patients?",
-      answer: "Yes! MedSync is completely free for patients forever. We believe healthcare management should be accessible to everyone, regardless of their financial situation."
+      question: "Is TeraSync really free for patients?",
+      answer: "Yes! TeraSync is completely free for patients forever. We believe healthcare management should be accessible to everyone, regardless of their financial situation."
     },
     {
       question: "What's included in the free patient plan?",
@@ -321,7 +321,7 @@ export default function PricingPage() {
               Ready to Get Started?
             </h2>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Join thousands of patients and healthcare providers who trust MedSync 
+              Join thousands of patients and healthcare providers who trust TeraSync 
               to manage their healthcare needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -10,7 +10,7 @@ import DownloadButtons from '@/components/DownloadButtons';
 import Typography from '@/components/ui/Typography';
 
 export const metadata = {
-  title: 'MedSync - Healthcare Management Made Simple',
+  title: 'TeraSync - Healthcare Management Made Simple',
   description: 'Manage prescriptions, appointments, and reminders — all in one simple app. Free for patients, powerful for clinics.',
 };
 
@@ -35,9 +35,9 @@ export default function Home() {
               <span className="text-gradient">Ready to take control of your health?</span>
             </Typography>
             <Typography variant="bodyLarge" className="text-slate-600 mb-8 content-narrow">
-              {/* Join thousands of patients and healthcare providers who trust MedSync 
+              {/* Join thousands of patients and healthcare providers who trust TeraSync 
               to manage their healthcare needs. */}
-               Our support team is here to help you get the most out of MedSync. 
+               Our support team is here to help you get the most out of TeraSync. 
                Reach out and we&apos;ll get back to you within 24 hours.
             </Typography>
             <DownloadButtons />
@@ -68,7 +68,7 @@ export default function Home() {
 //     {/* Company Logo/Name */}
 //     <div className="mb-6 animate-fade-in-up">
 //       <h1 className="font-nunito font-bold text-4xl md:text-5xl lg:text-6xl mb-4 leading-tight tracking-tight">
-//         <span className="block text-white drop-shadow-2xl">MedSync</span>
+//         <span className="block text-white drop-shadow-2xl">TeraSync</span>
 //       </h1>
 //     </div>
 //   </div>

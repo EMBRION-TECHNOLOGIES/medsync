@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'About Us',
-  description: 'Learn about MedSync\'s mission to make healthcare simple and accessible for everyone. Meet our team and discover our values.'
+  description: 'Learn about TeraSync\'s mission to make healthcare simple and accessible for everyone. Meet our team and discover our values.'
 };
 
 export default function About() {
@@ -46,7 +46,7 @@ export default function About() {
               </h2>
               <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
                 <p>
-                  MedSync was born from a simple observation: healthcare management was 
+                  TeraSync was born from a simple observation: healthcare management was 
                   unnecessarily complex. Patients struggled to remember medications, 
                   appointments were missed, and providers had limited visibility into 
                   patient adherence.
@@ -238,7 +238,7 @@ export default function About() {
               Ready to Transform Your Healthcare Experience?
             </h2>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Join thousands of patients and healthcare providers who trust MedSync 
+              Join thousands of patients and healthcare providers who trust TeraSync 
               to manage their healthcare needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

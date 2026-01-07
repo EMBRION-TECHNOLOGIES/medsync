@@ -30,16 +30,16 @@ export default function Logo({
   const LogoContent = () => (
     <div className={cn("flex items-center gap-2", className)}>
       <Image
-        src="/medsync_logo.svg"
-        alt="MedSync Logo"
+        src="/terasync_logo.png"
+        alt="TeraSync Logo"
         width={32}
         height={32}
-        className={cn(sizeClasses[size], "transition-all duration-300")}
+        className={cn(sizeClasses[size], "transition-all duration-300 rounded-md")}
         priority
       />
       {showText && (
         <span className={cn("font-nunito font-semibold transition-all duration-300", textSizes[size])}>
-          MedSync
+          TeraSync
         </span>
       )}
     </div>

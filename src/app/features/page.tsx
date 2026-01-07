@@ -212,7 +212,7 @@ export default function Features() {
               </h2>
               <div className="space-y-6 font-nunito font-regular text-lg text-slate-600 leading-relaxed">
                 <p>
-                  MedSync helps community pharmacies accept in‑app orders, manage deliveries, and chat with customers. Patients get fast delivery and clear guidance.
+                  TeraSync helps community pharmacies accept in‑app orders, manage deliveries, and chat with customers. Patients get fast delivery and clear guidance.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mt-4">
                   <div className="text-center p-4 bg-slate-50 rounded-lg">
@@ -273,7 +273,7 @@ export default function Features() {
               Ready to Experience These Features?
             </h2>
             <p className="font-nunito font-regular text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
-              Start your free trial today and discover how MedSync can transform 
+              Start your free trial today and discover how TeraSync can transform 
               your healthcare management experience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -281,7 +281,7 @@ export default function Features() {
                 href="/contact" 
                 className="btn bg-white text-ms-blue hover:bg-slate-50 btn-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
               >
-                Partner with MedSync
+                Partner with TeraSync
               </a>
               <a 
                 href={process.env.NEXT_PUBLIC_APP_STORE_URL || '/contact'} 

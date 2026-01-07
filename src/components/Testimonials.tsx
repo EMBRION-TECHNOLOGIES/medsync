@@ -15,7 +15,7 @@ export default function Testimonials() {
             <span className="text-gradient">What Our Users Say</span>
           </h2>
           <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 max-w-[48rem] mx-auto leading-relaxed">
-            Join thousands of patients and healthcare providers who trust MedSync
+            Join thousands of patients and healthcare providers who trust TeraSync
           </p>
         </div>
 
@@ -115,7 +115,7 @@ export default function Testimonials() {
             Ready to join our community?
           </h3>
           <p className="font-nunito font-regular text-lg md:text-xl text-slate-600 mb-8 max-w-[48rem] mx-auto leading-relaxed">
-            Start your healthcare journey with MedSync today and experience the difference.
+            Start your healthcare journey with TeraSync today and experience the difference.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 

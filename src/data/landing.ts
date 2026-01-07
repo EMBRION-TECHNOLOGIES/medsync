@@ -1,5 +1,5 @@
 export const navbar = {
-  logo: 'MedSync',
+  logo: 'TeraSync',
   links: [
     // { href: '/about', label: 'About' },
     { href: '/features', label: 'Features' },
@@ -17,7 +17,7 @@ export const navbar = {
 export const hero = {
   eyebrow: 'Now with AI and same‑day pharmacy delivery',
   title: 'Your medications—delivered. Your questions—answered.',
-  subtitle: 'MedSync connects you to nearby pharmacies for fast delivery while our AI Health Assistant helps with safe, reliable answers about your meds. Refill, track, and learn in one place.',
+  subtitle: 'TeraSync connects you to nearby pharmacies for fast delivery while our AI Health Assistant helps with safe, reliable answers about your meds. Refill, track, and learn in one place.',
   primaryCta: { href: 'https://forms.gle/FQKHuiVtxFJNU8Cp6', label: 'Join Waitlist', action: 'join_waitlist' },
   // secondaryCta: { href: '#how-it-works', label: 'See how it works', action: 'scroll_to_how_it_works' },
   trustBadges: [
@@ -27,11 +27,11 @@ export const hero = {
     'Low‑data, offline‑friendly'
   ],
   appMockup: {
-    id: 'medsync-today-card',
+    id: 'terasync-today-card',
     type: 'app-mockup',
     layout: {
       header: {
-        brand: 'Medsync',
+        brand: 'TeraSync',
         label: 'Today',
         reminder: {
           time: '8:00 PM',
@@ -107,7 +107,7 @@ export const howItWorks = {
     {
       number: 3,
       title: 'Ask our AI',
-      description: 'Chat with the MedSync AI Health Assistant for medication guidance.'
+      description: 'Chat with the TeraSync AI Health Assistant for medication guidance.'
     }
   ]
 };
@@ -134,7 +134,7 @@ export const testimonials = [
 
 export const faq = [
   {
-    q: 'Is MedSync free for patients?',
+    q: 'Is TeraSync free for patients?',
     a: 'Yes. Core features like delivery ordering, reminders, and AI assistant (fair‑use) are free.'
   },
   {
@@ -160,9 +160,9 @@ export const footer = {
     { href: '/contact', label: 'Contact' }
   ],
   socials: [
-    { href: 'https://www.instagram.com/_medsync_', label: 'Instagram' },
-    { href: 'https://x.com/medsyncng', label: 'Twitter' },
-    { href: 'https://m.facebook.com/medsync1.0/', label: 'Facebook' }
+    { href: 'https://www.instagram.com/_terasync_', label: 'Instagram' },
+    { href: 'https://x.com/terasyncng', label: 'Twitter' },
+    { href: 'https://m.facebook.com/terasync/', label: 'Facebook' }
   ],
-  copyright: `© ${new Date().getFullYear()} MedSync. All rights reserved.`
+  copyright: `© ${new Date().getFullYear()} TeraSync. All rights reserved.`
 };

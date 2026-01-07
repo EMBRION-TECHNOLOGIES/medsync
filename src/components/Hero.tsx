@@ -159,7 +159,7 @@ export default function Hero() {
           >
             <img 
               src="/Ist October (1).svg" 
-              alt="MedSync App Preview" 
+              alt="TeraSync App Preview" 
               className="w-full h-full max-w-none object-contain"
             />
           </motion.div>

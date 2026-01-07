@@ -15,8 +15,8 @@ const nunitoSans = Nunito_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: {
-    default: 'MedSync',
-    template: '%s | MedSync'
+    default: 'TeraSync',
+    template: '%s | TeraSync'
   },
   description: 'Manage prescriptions, appointments, and reminders — all in one simple app.',
   icons: {
@@ -30,19 +30,19 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     type: 'website',
-    siteName: 'MedSync',
+    siteName: 'TeraSync',
     images: [
       {
-        url: '/medsync_logo_outlined.png',
+        url: '/terasync_logo.png',
         width: 1200,
         height: 630,
-        alt: 'MedSync - Healthcare Management App'
+        alt: 'TeraSync - Healthcare Management App'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/medsync_logo_outlined.png']
+    images: ['/terasync_logo.png']
   }
 };
 

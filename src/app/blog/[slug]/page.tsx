@@ -35,7 +35,7 @@ Medication adherence is crucial for maintaining your health, but it's not always
 
 Set up multiple reminder systems:
 - **Phone alarms** with custom messages
-- **Medication reminder apps** like MedSync
+- **Medication reminder apps** like TeraSync
 - **Smart watch notifications**
 - **Voice assistant reminders**
 
@@ -159,12 +159,12 @@ Digital health solutions are not just improving access to healthcare in Africa�
 The key to success lies in designing solutions that work with existing infrastructure, respect local contexts, and prioritize user experience for both patients and healthcare providers.`
   },
   'clinics-improve-adherence': {
-    title: 'How Clinics Can Improve Patient Adherence with MedSync',
+    title: 'How Clinics Can Improve Patient Adherence with TeraSync',
     excerpt: 'Practical strategies for healthcare providers to help patients stay compliant with their medications.',
     date: '2024-01-05',
     readTime: '6 min read',
     category: 'Healthcare',
-    body: `# How Clinics Can Improve Patient Adherence with MedSync
+    body: `# How Clinics Can Improve Patient Adherence with TeraSync
 
 Patient medication adherence is one of the biggest challenges in healthcare today. Studies show that up to 50% of patients don't take their medications as prescribed, leading to poor health outcomes and increased healthcare costs.
 
@@ -176,11 +176,11 @@ Poor medication adherence results in:
 - **Worsening chronic conditions** and complications
 - **Increased hospital readmissions**
 
-## How MedSync Helps Clinics
+## How TeraSync Helps Clinics
 
 ### 1. Automated Reminders
 
-MedSync's smart reminder system:
+TeraSync's smart reminder system:
 - Sends personalized notifications based on patient preferences
 - Adapts to patient schedules and time zones
 - Provides multiple reminder channels (SMS, push notifications, calls)
@@ -252,7 +252,7 @@ Track these key performance indicators:
 ### For Healthcare Providers:
 1. **Set clear expectations** with patients about medication importance
 2. **Simplify regimens** whenever possible
-3. **Use MedSync data** to identify and address barriers
+3. **Use TeraSync data** to identify and address barriers
 4. **Provide ongoing support** and encouragement
 5. **Celebrate patient successes** and progress
 
@@ -265,7 +265,7 @@ Track these key performance indicators:
 
 ## ROI and Benefits
 
-Clinics using MedSync typically see:
+Clinics using TeraSync typically see:
 - **25-40% improvement** in medication adherence
 - **30% reduction** in no-show rates
 - **20% decrease** in hospital readmissions
@@ -274,7 +274,7 @@ Clinics using MedSync typically see:
 
 ## Getting Started
 
-1. **Schedule a demo** to see MedSync in action
+1. **Schedule a demo** to see TeraSync in action
 2. **Identify pilot patients** for initial rollout
 3. **Train your team** on platform features
 4. **Launch with support** from our implementation team
@@ -282,11 +282,11 @@ Clinics using MedSync typically see:
 
 ## Conclusion
 
-MedSync isn't just a medication reminder app—it's a comprehensive platform that empowers clinics to improve patient outcomes through better adherence, streamlined communication, and data-driven insights.
+TeraSync isn't just a medication reminder app—it's a comprehensive platform that empowers clinics to improve patient outcomes through better adherence, streamlined communication, and data-driven insights.
 
 By leveraging technology to support patients between visits, clinics can deliver more effective care, improve patient satisfaction, and achieve better clinical outcomes while reducing overall healthcare costs.
 
-The future of healthcare is proactive, personalized, and patient-centered. MedSync helps clinics get there today.`
+The future of healthcare is proactive, personalized, and patient-centered. TeraSync helps clinics get there today.`
   }
 };
 
@@ -506,7 +506,7 @@ export default function BlogPost({ params }: Params) {
               Ready to Transform Your Healthcare?
             </Typography>
             <Typography variant="bodyLarge" className="text-xl text-white/90 mb-8 leading-relaxed content-narrow">
-              Join thousands of patients and healthcare providers who trust MedSync 
+              Join thousands of patients and healthcare providers who trust TeraSync 
               to manage their healthcare needs.
             </Typography>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

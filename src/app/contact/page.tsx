@@ -59,8 +59,8 @@ export default function Contact() {
       icon: <Mail className="w-7 h-7 text-ms-blue" />,
       title: "Email Support",
       description: "Get help via email",
-      value: "hello@medsync.ng",
-      action: "mailto:hello@medsync.ng"
+      value: "hello@terasync.ng",
+      action: "mailto:hello@terasync.ng"
     },
     {
       icon: <MessageCircle className="w-7 h-7 text-ms-green" />,
@@ -146,7 +146,7 @@ export default function Contact() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed content-narrow">
-              Have questions about MedSync? Need support? Want to partner with us? 
+              Have questions about TeraSync? Need support? Want to partner with us? 
               We&apos;d love to hear from you.
             </p>
           </div>
@@ -325,7 +325,7 @@ export default function Contact() {
               Ready to Get Started?
             </h2>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Join thousands of patients and healthcare providers who trust MedSync 
+              Join thousands of patients and healthcare providers who trust TeraSync 
               to manage their healthcare needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

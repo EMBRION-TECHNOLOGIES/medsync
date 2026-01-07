@@ -29,8 +29,8 @@ export async function POST(req: Request) {
 
     // Send email using Resend
     await resend.emails.send({
-      from: 'MedSync <noreply@medsync.app>',
-      to: ['support@medsync.com'],
+      from: 'TeraSync <noreply@terasync.ng>',
+      to: ['support@terasync.ng'],
       subject: 'New contact submission',
       text: `
 Name: ${name}
