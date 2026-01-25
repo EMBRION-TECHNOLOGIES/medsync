@@ -5,8 +5,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: { 
-        sans: ['Nunito Sans', 'system-ui', 'sans-serif'],
-        nunito: ['Nunito Sans', 'system-ui', 'sans-serif']
+        sans: ['var(--font-nunito)', 'system-ui', 'sans-serif'],
+        nunito: ['var(--font-nunito)', 'system-ui', 'sans-serif']
       },
       fontWeight: {
         regular: '400',

@@ -1,6 +1,6 @@
-# MedSync Landing Page
+# TeraSync Landing Page
 
-A modern, responsive landing page for MedSync - a healthcare management app that helps patients stay on track with medications, appointments, and health records.
+A modern, responsive landing page for TeraSync - a healthcare management app that helps patients stay on track with medications, appointments, and health records.
 
 ## 🚀 Features
 
@@ -16,7 +16,7 @@ A modern, responsive landing page for MedSync - a healthcare management app that
 ## 📁 Project Structure
 
 ```
-medsync/
+terasync/
 ├── src/
 │   ├── app/                 # Next.js App Router pages
 │   │   ├── about/          # About page
@@ -52,7 +52,7 @@ Create a `.env.local` file with the following variables:
 
 ```env
 # Site Configuration
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
+NEXT_PUBLIC_SITE_URL=http://localhost:4000
 
 # Email Service (Resend)
 RESEND_API_KEY=your_resend_api_key_here
@@ -61,8 +61,8 @@ RESEND_API_KEY=your_resend_api_key_here
 NEXT_PUBLIC_PLAUSIBLE_DOMAIN=your_domain_here
 
 # App Store Links (Optional)
-NEXT_PUBLIC_APP_STORE_URL=https://apps.apple.com/app/medsync
-NEXT_PUBLIC_GOOGLE_PLAY_URL=https://play.google.com/store/apps/details?id=com.medsync.app
+NEXT_PUBLIC_APP_STORE_URL=https://apps.apple.com/app/terasync
+NEXT_PUBLIC_GOOGLE_PLAY_URL=https://play.google.com/store/apps/details?id=com.terasync.app
 ```
 
 ## 🚀 Getting Started
@@ -92,7 +92,7 @@ NEXT_PUBLIC_GOOGLE_PLAY_URL=https://play.google.com/store/apps/details?id=com.me
    ```
 
 4. **Open your browser**:
-   Navigate to [http://localhost:3000](http://localhost:3000)
+   Navigate to [http://localhost:4000](http://localhost:4000)
 
 ## 📧 Email Configuration
 
@@ -205,8 +205,8 @@ This project is licensed under the MIT License.
 ## 📞 Support
 
 For support or questions:
-- Email: support@medsync.com
-- Website: [medsync.app](https://medsync.app)
+- Email: support@terasync.com
+- Website: [terasync.app](https://terasync.app)
 
 ---
 

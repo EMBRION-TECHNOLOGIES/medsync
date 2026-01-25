@@ -12,7 +12,7 @@ export default function Hero() {
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   return (
-    <section className="bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden pt-6 md:pt-8 pb-16 md:pb-20">
+    <section className="bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden pt-2 md:pt-4 pb-12 md:pb-16">
       {/* Animated Background Elements */}
       <motion.div 
         className="absolute inset-0 overflow-hidden"
@@ -58,9 +58,21 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
         >
-          {/* Left Column */}
+          {/* Left Column - App Mockup */}
           <motion.div 
-            className="space-y-8"
+            className="relative flex items-center justify-center min-h-[420px] md:min-h-[560px] lg:min-h-[680px] order-2 lg:order-1"
+            variants={staggerItem}
+          >
+            <img 
+              src="/Ist October_20260124_213227_0000.svg" 
+              alt="TeraSync App Preview" 
+              className="w-full h-full max-w-none object-contain"
+            />
+          </motion.div>
+
+          {/* Right Column */}
+          <motion.div 
+            className="space-y-8 order-1 lg:order-2 lg:pl-10 lg:pr-12 xl:pr-16"
             variants={staggerItem}
           >
             {/* Eyebrow */}
@@ -150,18 +162,6 @@ export default function Hero() {
                 </motion.div>
               ))}
             </motion.div>
-          </motion.div>
-
-          {/* Right Column - App Mockup */}
-          <motion.div 
-            className="relative flex items-center justify-center min-h-[420px] md:min-h-[560px] lg:min-h-[680px]"
-            variants={staggerItem}
-          >
-            <img 
-              src="/Ist October (1).svg" 
-              alt="TeraSync App Preview" 
-              className="w-full h-full max-w-none object-contain"
-            />
           </motion.div>
         </motion.div>
       </div>

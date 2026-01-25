@@ -30,7 +30,7 @@ export default function Logo({
   const LogoContent = () => (
     <div className={cn("flex items-center gap-2", className)}>
       <Image
-        src="/terasync_logo.png"
+        src="/terasync_png_full.png"
         alt="TeraSync Logo"
         width={32}
         height={32}

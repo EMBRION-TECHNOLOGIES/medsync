@@ -13,7 +13,7 @@ const nunitoSans = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:4000'),
   title: {
     default: 'TeraSync',
     template: '%s | TeraSync'
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   description: 'Manage prescriptions, appointments, and reminders — all in one simple app.',
   icons: {
     icon: [
-      { url: '/favicon.ico?v=2', sizes: 'any' },
-      { url: '/favicon.svg?v=2', type: 'image/svg+xml' }
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png', type: 'image/png', sizes: '96x96' },
     ],
-    apple: '/apple-touch-icon.png?v=2',
-    shortcut: '/favicon.ico?v=2'
+    apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
   openGraph: {
