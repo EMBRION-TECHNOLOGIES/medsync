@@ -159,7 +159,9 @@ export const footer = {
     { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'Contact' },
     { href: '/privacy', label: 'Privacy Policy' },
-    { href: '/terms', label: 'Terms of Service' }
+    { href: '/terms', label: 'Terms of Service' },
+    { href: '/delete-account', label: 'Delete account' },
+    { href: '/delete-data', label: 'Delete data (partial)' }
   ],
   socials: [
     { href: 'https://www.instagram.com/_terasync_', label: 'Instagram' },
