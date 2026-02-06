@@ -20,13 +20,13 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <Typography variant="h6" className="mb-6">Quick Links</Typography>
-            <nav className="flex flex-col gap-3">
+            <Typography variant="h6" className="mb-6" id="footer-quick-links">Quick Links</Typography>
+            <nav aria-labelledby="footer-quick-links" className="flex flex-col gap-3">
               {footer.links.map((l) => (
                 <Link 
                   key={l.href} 
                   href={l.href} 
-                  className="font-nunito font-regular text-zinc-600 hover:text-zinc-900 transition-colors duration-200"
+                  className="font-nunito font-regular text-zinc-600 hover:text-zinc-900 focus:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-400 focus:ring-offset-2 rounded transition-colors duration-200"
                 >
                   {l.label}
                 </Link>
@@ -36,13 +36,15 @@ export default function Footer() {
 
           {/* Social Links */}
           <div>
-            <Typography variant="h6" className="mb-6">Connect</Typography>
-            <nav className="flex flex-col gap-3">
+            <Typography variant="h6" className="mb-6" id="footer-connect">Connect</Typography>
+            <nav aria-labelledby="footer-connect" className="flex flex-col gap-3">
               {footer.socials.map((s) => (
                 <a 
                   key={s.label} 
                   href={s.href} 
-                  className="font-nunito font-regular text-zinc-600 hover:text-zinc-900 transition-colors duration-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-nunito font-regular text-zinc-600 hover:text-zinc-900 focus:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-400 focus:ring-offset-2 rounded transition-colors duration-200"
                 >
                   {s.label}
                 </a>

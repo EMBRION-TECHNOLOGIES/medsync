@@ -157,7 +157,9 @@ export const footer = {
     { href: '/features', label: 'Features' },
     // { href: '/pricing', label: 'Pricing' },
     { href: '/blog', label: 'Blog' },
-    { href: '/contact', label: 'Contact' }
+    { href: '/contact', label: 'Contact' },
+    { href: '/privacy', label: 'Privacy Policy' },
+    { href: '/terms', label: 'Terms of Service' }
   ],
   socials: [
     { href: 'https://www.instagram.com/_terasync_', label: 'Instagram' },

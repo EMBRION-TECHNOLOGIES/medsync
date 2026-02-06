@@ -54,6 +54,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={nunitoSans.variable}>
       <body className="font-nunito min-h-dvh antialiased text-zinc-900 bg-white">
+        <a
+          href="#main-content"
+          className="fixed left-4 top-4 z-[100] -translate-y-[200%] rounded bg-ms-blue px-4 py-2 text-white font-medium shadow-lg transition-transform focus:translate-y-0 focus:outline-none focus:ring-2 focus:ring-ms-blue focus:ring-offset-2"
+        >
+          Skip to main content
+        </a>
         <PageTransition>
           {children}
         </PageTransition>
