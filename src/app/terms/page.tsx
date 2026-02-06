@@ -20,10 +20,13 @@ export default function TermsPage() {
         <p>
           These Terms of Service (&quot;Terms&quot;) constitute a legally
           binding agreement between you (&quot;User&quot;, &quot;you&quot;,
-          &quot;your&quot;) and Embrion Technologies Limited (RC: 8569332), a
+          &quot;your&quot;) and TeraSync Technologies Limited (RC: 9210340), a
           private company limited by shares incorporated under the laws of the
           Federal Republic of Nigeria, operating the TeraSync platform
           (&quot;TeraSync&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;).
+          TeraSync Technologies Limited may engage affiliated companies,
+          including Embrion Technologies Limited, as technology, infrastructure,
+          or service providers.
         </p>
         <p>
           These Terms govern your access to and use of the TeraSync mobile
@@ -246,7 +249,7 @@ export default function TermsPage() {
       <section aria-labelledby="liability">
         <h2 id="liability">12. Limitation of Liability</h2>
         <p>
-          To the maximum extent permitted by law, Embrion Technologies
+          To the maximum extent permitted by law, TeraSync Technologies
           Limited, TeraSync, and their directors, officers, employees, and
           partners shall not be liable for:
         </p>
@@ -271,9 +274,9 @@ export default function TermsPage() {
       <section aria-labelledby="indemnity">
         <h2 id="indemnity">13. Indemnity</h2>
         <p>
-          You agree to indemnify and hold harmless TeraSync, Embrion
-          Technologies Limited, and their affiliates from any claims, losses,
-          or expenses arising from:
+          You agree to indemnify and hold harmless TeraSync Technologies
+          Limited, TeraSync, and their affiliates from any claims, losses, or
+          expenses arising from:
         </p>
         <ul>
           <li>Your use or misuse of the Service</li>
