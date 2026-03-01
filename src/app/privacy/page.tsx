@@ -48,15 +48,10 @@ export default function PrivacyPage() {
         <h2 id="controller">2. Data Controller</h2>
         <p>The data controller responsible for processing your personal data is:</p>
         <p>
-          <strong>TeraSync Technologies Limited (RC: 9210340)</strong>
+          <strong>Embrion Technologies Limited (RC: 8569332)</strong>
           <br />
           A private company limited by shares incorporated under the laws of the
-          Federal Republic of Nigeria.
-        </p>
-        <p>
-          TeraSync Technologies Limited may engage affiliated companies,
-          including Embrion Technologies Limited, as technology, infrastructure,
-          or service providers.
+          Federal Republic of Nigeria, operating the TeraSync platform.
         </p>
         <p>
           Email: <a href="mailto:admin@terasync.ng">admin@terasync.ng</a>
@@ -305,7 +300,7 @@ export default function PrivacyPage() {
       <section aria-labelledby="liability">
         <h2 id="liability">13. Limitation of Liability</h2>
         <p>
-          To the fullest extent permitted by law, TeraSync Technologies Limited
+          To the fullest extent permitted by law, Embrion Technologies Limited
           and TeraSync shall not be liable for:
         </p>
         <ul>
@@ -320,7 +315,7 @@ export default function PrivacyPage() {
       <section aria-labelledby="indemnity">
         <h2 id="indemnity">14. User Indemnity</h2>
         <p>
-          You agree to indemnify and hold harmless TeraSync Technologies
+          You agree to indemnify and hold harmless Embrion Technologies
           Limited, TeraSync, its directors, officers, employees, and partners
           from any claims, losses, or liabilities arising from:
         </p>
