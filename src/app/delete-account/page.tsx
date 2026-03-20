@@ -16,7 +16,7 @@ export default function DeleteAccountPage() {
       otherLegalLabel="Privacy Policy"
     >
       <p className="text-zinc-800 font-medium">
-        TeraSync (operated by Embrion Technologies Limited) lets you request
+        TeraSync (operated by TeraSync Health Limited) lets you request
         deletion of your account and the personal data associated with it.
         This page describes how to do that and what happens to your data.
       </p>

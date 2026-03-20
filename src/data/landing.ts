@@ -168,5 +168,6 @@ export const footer = {
     { href: 'https://x.com/terasyncng', label: 'Twitter' },
     { href: 'https://m.facebook.com/terasync/', label: 'Facebook' }
   ],
-  copyright: `© ${new Date().getFullYear()} TeraSync. All rights reserved.`
+  copyright: `© ${new Date().getFullYear()} TeraSync. All rights reserved.`,
+  legalEntity: 'TeraSync Health Limited (RC: 9210340) · Registered in Nigeria'
 };

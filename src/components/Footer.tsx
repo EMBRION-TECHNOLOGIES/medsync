@@ -53,10 +53,13 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t pt-8 mt-12 text-center">
-          <Typography variant="caption" className="text-zinc-500">
+        {/* Copyright and Legal Entity */}
+        <div className="border-t pt-8 mt-12 text-center space-y-2">
+          <Typography variant="caption" className="text-zinc-500 block">
             {footer.copyright}
+          </Typography>
+          <Typography variant="caption" className="text-zinc-500 block">
+            {footer.legalEntity}
           </Typography>
         </div>
       </div>
