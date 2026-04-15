@@ -13,7 +13,15 @@ const nunitoSans = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:4000'),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ||
+      (process.env.NODE_ENV === 'production'
+        ? 'https://terasync.ng'
+        : 'http://localhost:4000')
+  ),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     default: 'TeraSync',
     template: '%s | TeraSync'

@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "medsync.ng"
+        }
+      ],
+      "destination": "https://terasync.ng/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.medsync.ng"
+        }
+      ],
+      "destination": "https://terasync.ng/$1",
+      "permanent": true
+    }
+  ]
+}
