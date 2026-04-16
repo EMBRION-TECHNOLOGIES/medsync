@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
     (process.env.NODE_ENV === 'production'
-      ? 'https://terasync.ng'
+      ? 'https://www.terasync.ng'
       : 'http://localhost:4000')
   
   return [
