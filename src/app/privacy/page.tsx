@@ -11,7 +11,7 @@ export default function PrivacyPage() {
   return (
     <LegalPageLayout
       title="Privacy Policy"
-      lastUpdated="5 February 2025"
+      lastUpdated="2 June 2026"
       otherLegalHref="/terms"
       otherLegalLabel="Terms of Service"
     >
@@ -90,7 +90,7 @@ export default function PrivacyPage() {
           <li>Allergies</li>
           <li>Medical conditions or health notes</li>
           <li>Medication lists and adherence data</li>
-          <li>Prescription images and extracted text (via OCR)</li>
+          <li>Medication and order information you provide in chat</li>
           <li>Information shared with pharmacies or via in-app chat</li>
           <li>Health-related information entered into AI-assisted features</li>
         </ul>
@@ -150,15 +150,19 @@ export default function PrivacyPage() {
       <section aria-labelledby="ai-features">
         <h2 id="ai-features">4A. AI-Assisted Features and Automated Processing</h2>
         <p>
-          TeraSync uses AI-assisted systems, including conversational tools and
-          automated processing, to support features such as reminders,
-          prescription handling, chat support, and operational workflows.
+          TeraSync uses AI-assisted systems, including Steward AI conversational
+          tools, to support features such as reminders, medication ordering
+          support, chat support, and operational workflows. With your in-app
+          consent, we may send chat messages, medication and adherence summaries,
+          and health notes (if enabled) to third-party AI processors including
+          DeepSeek and Microsoft Azure OpenAI.
         </p>
         <p>You acknowledge and agree that:</p>
         <ul>
           <li>AI systems operate on probabilistic and non-deterministic models</li>
           <li>Outputs may be incomplete, inaccurate, or unsuitable for reliance</li>
           <li>AI features are supportive and informational only</li>
+          <li>You may withdraw AI data-sharing consent in the app Settings</li>
         </ul>
         <p>
           AI outputs do not constitute medical, pharmaceutical, legal, or
@@ -172,7 +176,7 @@ export default function PrivacyPage() {
         <p>We use your data to:</p>
         <ul>
           <li>Create and manage your account</li>
-          <li>Provide prescription upload, OCR, medication ordering, and delivery services</li>
+          <li>Provide medication ordering, pharmacy chat, and delivery services</li>
           <li>Show nearby pharmacies and delivery estimates</li>
           <li>Process payments, refunds, and order tracking</li>
           <li>Send notifications (push, email, SMS) for verification, reminders, and updates</li>
@@ -218,8 +222,7 @@ export default function PrivacyPage() {
           <li>Cloudinary / AWS S3 – storage of uploaded files and images</li>
           <li>SendGrid / ZeptoMail – transactional emails</li>
           <li>Termii (or similar) – SMS notifications</li>
-          <li>OpenAI – AI-assisted chat and processing</li>
-          <li>Google Cloud Vision (or similar) – OCR for prescription images</li>
+          <li>DeepSeek and Microsoft Azure OpenAI – AI-assisted chat (Steward AI) with your in-app consent</li>
           <li>Seamfix (or similar) – identity verification (where applicable)</li>
           <li>Hosting providers (e.g. Railway, Render) – infrastructure and databases</li>
         </ul>

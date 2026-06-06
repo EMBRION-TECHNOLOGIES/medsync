@@ -25,7 +25,7 @@ export default function DeleteDataPage() {
         <h2 id="steps">Steps to request partial data deletion</h2>
         <p>Send an email to <a href="mailto:admin@terasync.ng">admin@terasync.ng</a> from the email address linked to your TeraSync account. Use the subject line <strong>Request data deletion</strong> and clearly state:</p>
         <ul>
-          <li>Which data you want deleted (e.g. health notes, chat history for a certain period, prescription images, or other categories we hold)</li>
+          <li>Which data you want deleted (e.g. health notes, chat history for a certain period, or other categories we hold)</li>
           <li>Your full name and registered email so we can identify your account</li>
         </ul>
         <p>We will process your request and confirm what has been deleted. Some data may be necessary to keep for the service or for legal reasons; we will explain if anything cannot be removed.</p>
@@ -37,7 +37,6 @@ export default function DeleteDataPage() {
         <ul>
           <li>Health-related notes or optional profile fields</li>
           <li>Chat or conversation history (e.g. with pharmacy or AI)</li>
-          <li>Prescription images you uploaded</li>
           <li>Address or contact details (where not required for active orders)</li>
         </ul>
         <p>We cannot delete data we are required to retain by law (e.g. transaction records for a statutory period) or that is essential to provide the service you still use.</p>
